@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Written by HPBxmlManager procedure by NREL-->
+<HPBParametization xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\..\schema\HPBxml.xsd">
+  <HPBXmlSettings>
+    <HPBXmlVersion>0.1.2.4</HPBXmlVersion>
+  </HPBXmlSettings>
+  <OptEPlusMetadata>
+    <OptEPlusVersion>0.1.2.7</OptEPlusVersion>
+    <OptEPlusDatabase>C:\AEDG\med_retail\plug1.opt</OptEPlusDatabase>
+  </OptEPlusMetadata>
+  <SimSettings>
+    <TimeStepInHour>4</TimeStepInHour>
+    <UpdateShadowInterval>30</UpdateShadowInterval>
+    <RunWeatherFile>true</RunWeatherFile>
+    <MaxHVACIterations>25</MaxHVACIterations>
+    <MinSystemTimeStep>5</MinSystemTimeStep>
+    <EnergyPlusVersion>8.0</EnergyPlusVersion>
+  </SimSettings>
+  <SiteParams>
+    <WeatherFile filename="USA_FL_Miami_TMY2.epw"/>
+    <DesignDays instance="USA_FL_MIAMI"/>
+    <UtilityCosts instance="FloridPowLight_CommRates"/>
+    <PrimarySpaceType>Retail</PrimarySpaceType>
+    <SecondarySpaceType>Whole Building</SecondarySpaceType>
+    <ClimateZones>
+      <ClimateZone>1A</ClimateZone>
+    </ClimateZones>
+    <SiteMetaData SiteStatsIndex="0" WeightFactor="0" BldgID="0" CensusDivision="0" CensusRegion="0" PrincipleBuildingActivity="25" MoreDetailedActivity="0"/>
+  </SiteParams>
+  <SpecificConstructs StaticObjectsFile="HPBStandardConstructions.imf">
+    <FenestrationSystem>
+      <south>
+        <ConstructionName instance="TrpLoEFilm(55)Bronze6mm/13mmAir" CostPer="388.468" InstallCost="292.5" FixedOM="2" ExpectedLife="15" CostUnits="$/m^2" DataSource="90.1ENV list | Mathis 2003 | 34.00/sf basis + 3/sf for tint | Vnl/Clr-Ins-V22-Ins-Clr| Kwaneer Curtain Wall |entered by Bgriffith"/>
+        <Performance>
+          <UValue>1.211</UValue>
+          <SHGC>0.21</SHGC>
+          <VisibleTrans>0.274</VisibleTrans>
+        </Performance>
+        <WindowGlass MaterialName="BRONZE6MM" Thickness="0.006" SolarTrans="0.482" SolarReflectFront="0.054" SolarReflectBack="0.054" VisibleTrans="0.534" VisibleReflectFront="0.057" VisibleReflectBack="0.057" IRTrans="0" IREmmFront="0.84" IREmmBack="0.84" Conductivity="0.9"/>
+        <WindowGas MaterialName="AIR13MM" GasType="Air" Thickness="0.0127"/>
+        <WindowGlass MaterialName="COATEDPOLY-55" Thickness="0.00051" SolarTrans="0.32" SolarReflectFront="0.582" SolarReflectBack="0.593" VisibleTrans="0.551" VisibleReflectFront="0.336" VisibleReflectBack="0.375" IRTrans="0" IREmmFront="0.046" IREmmBack="0.72" Conductivity="0.14"/>
+        <WindowGas MaterialName="AIR13MM" GasType="Air" Thickness="0.0127"/>
+        <WindowGlass MaterialName="CLEAR6MM" Thickness="0.006" SolarTrans="0.775" SolarReflectFront="0.071" SolarReflectBack="0.071" VisibleTrans="0.881" VisibleReflectFront="0.08" VisibleReflectBack="0.08" IRTrans="0" IREmmFront="0.84" IREmmBack="0.84" Conductivity="0.9"/>
+      </south>
+      <east>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-5_0.3_0.4_fixed_south_window" CostPer="184.629" InstallCost="250" FixedOM="2" CostUnits="$/m^2" DataSource="Closest match from 90.1 database (1999)"/>
+        <Performance>
+          <UValue>3.258</UValue>
+          <SHGC>0.39</SHGC>
+          <VisibleTrans>0.498</VisibleTrans>
+        </Performance>
+        <WindowGlass MaterialName="Theoretical Glass [84]" Thickness="0.003" SolarTrans="0.551413" SolarReflectFront="0.398587" SolarReflectBack="0.398587" VisibleTrans="0.678747" VisibleReflectFront="0.271253" VisibleReflectBack="0.271253" IRTrans="0" IREmmFront="0.85" IREmmBack="0.85" Conductivity="2.39841"/>
+        <WindowGas MaterialName="AIR 6MM" GasType="Air" Thickness="0.0063"/>
+        <WindowGlass MaterialName="Theoretical Glass [84]" Thickness="0.003" SolarTrans="0.551413" SolarReflectFront="0.398587" SolarReflectBack="0.398587" VisibleTrans="0.678747" VisibleReflectFront="0.271253" VisibleReflectBack="0.271253" IRTrans="0" IREmmFront="0.85" IREmmBack="0.85" Conductivity="2.39841"/>
+      </east>
+      <north>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-5_0.3_0.4_fixed_south_window" CostPer="184.629" InstallCost="250" FixedOM="2" CostUnits="$/m^2" DataSource="Closest match from 90.1 database (1999)"/>
+        <Performance>
+          <UValue>3.258</UValue>
+          <SHGC>0.39</SHGC>
+          <VisibleTrans>0.498</VisibleTrans>
+        </Performance>
+        <WindowGlass MaterialName="Theoretical Glass [84]" Thickness="0.003" SolarTrans="0.551413" SolarReflectFront="0.398587" SolarReflectBack="0.398587" VisibleTrans="0.678747" VisibleReflectFront="0.271253" VisibleReflectBack="0.271253" IRTrans="0" IREmmFront="0.85" IREmmBack="0.85" Conductivity="2.39841"/>
+        <WindowGas MaterialName="AIR 6MM" GasType="Air" Thickness="0.0063"/>
+        <WindowGlass MaterialName="Theoretical Glass [84]" Thickness="0.003" SolarTrans="0.551413" SolarReflectFront="0.398587" SolarReflectBack="0.398587" VisibleTrans="0.678747" VisibleReflectFront="0.271253" VisibleReflectBack="0.271253" IRTrans="0" IREmmFront="0.85" IREmmBack="0.85" Conductivity="2.39841"/>
+      </north>
+      <west>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-5_0.3_0.4_fixed_south_window" CostPer="184.629" InstallCost="250" FixedOM="2" CostUnits="$/m^2" DataSource="Closest match from 90.1 database (1999)"/>
+        <Performance>
+          <UValue>3.258</UValue>
+          <SHGC>0.39</SHGC>
+          <VisibleTrans>0.498</VisibleTrans>
+        </Performance>
+        <WindowGlass MaterialName="Theoretical Glass [84]" Thickness="0.003" SolarTrans="0.551413" SolarReflectFront="0.398587" SolarReflectBack="0.398587" VisibleTrans="0.678747" VisibleReflectFront="0.271253" VisibleReflectBack="0.271253" IRTrans="0" IREmmFront="0.85" IREmmBack="0.85" Conductivity="2.39841"/>
+        <WindowGas MaterialName="AIR 6MM" GasType="Air" Thickness="0.0063"/>
+        <WindowGlass MaterialName="Theoretical Glass [84]" Thickness="0.003" SolarTrans="0.551413" SolarReflectFront="0.398587" SolarReflectBack="0.398587" VisibleTrans="0.678747" VisibleReflectFront="0.271253" VisibleReflectBack="0.271253" IRTrans="0" IREmmFront="0.85" IREmmBack="0.85" Conductivity="2.39841"/>
+      </west>
+      <SkylightConst>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-5_0.02_1_All Skylights without Curb_Skylight" CostPer="199.908" InstallCost="250" FixedOM="2" CostUnits="$/m^2" DataSource="Closest match from 90.1 database (1999)"/>
+        <Performance>
+          <UValue>3.918</UValue>
+          <SHGC>0.39</SHGC>
+          <VisibleTrans>0.494</VisibleTrans>
+        </Performance>
+        <WindowGlass MaterialName="Theoretical Glass [89]" Thickness="0.003" SolarTrans="0.382" SolarReflectFront="0.568" SolarReflectBack="0.568" VisibleTrans="0.493973" VisibleReflectFront="0.456027" VisibleReflectBack="0.456027" IRTrans="0" IREmmFront="0.93" IREmmBack="0.93" Conductivity="0.0295567"/>
+      </SkylightConst>
+    </FenestrationSystem>
+    <DaylightFenestrationSystem/>
+    <OpaqueConstructs>
+      <roofs>
+        <ConstructionName instance="IEAD_R-15 ci_Roof" description="R-15 ci" CostPer="34.3904" InstallCost="14.818" CostUnits="$/m^2" DataSource="Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)"/>
+        <Performance>
+          <Type>Insulation Entirely Above Deck</Type>
+          <UValue>0.3832</UValue>
+        </Performance>
+        <Material MaterialName="Roof Membrane" Roughness="VeryRough" Thickness="0.0095" Conductivity="0.16" Density="1121.29" SpecificHeat="1460" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="Roof Insulation" Roughness="MediumRough" Thickness="0.124958" Conductivity="0.049" Density="265" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="Metal Decking" Roughness="MediumSmooth" Thickness="0.001524" Conductivity="45.006" Density="7680" SpecificHeat="418.4" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.3"/>
+      </roofs>
+      <int-walls>
+        <ConstructionName instance="Standard_Int-Wall"/>
+        <Material MaterialName="GP01 1/2 GYPSUM" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="800" SpecificHeat="1090" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.5"/>
+        <Material MaterialName="GP01 1/2 GYPSUM" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="800" SpecificHeat="1090" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.5"/>
+      </int-walls>
+      <ext-walls>
+        <ConstructionName instance="Mass_NR_Ext-wall" description="NR" CostPer="28.9309" InstallCost="12.4657" CostUnits="$/m^2" DataSource="Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)"/>
+        <Performance>
+          <Type>Mass</Type>
+          <UValue>4.282</UValue>
+        </Performance>
+        <Material MaterialName="1IN Stucco " Roughness="Smooth" Thickness="0.0253" Conductivity="0.6918" Density="1858" SpecificHeat="837" AbsorThermal="0.9" AbsorSolar="0.92" AbsorVis="0.92"/>
+        <Material MaterialName="8IN Concrete HW" Roughness="MediumRough" Thickness="0.2033" Conductivity="1.7296" Density="2243" SpecificHeat="837" AbsorThermal="0.9" AbsorSolar="0.65" AbsorVis="0.65"/>
+        <Material MaterialName="1/2IN Gypsum" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="784.9" SpecificHeat="830" AbsorThermal="0.9" AbsorSolar="0.92" AbsorVis="0.92"/>
+      </ext-walls>
+      <ext-slab>
+        <ConstructionName instance="Unheated_Ext-slab" CostPer="269.93" InstallCost="269.93" CostUnits="$/m^2" DataSource="Adjustment to match RS Means ft^2 cost--medium-box retail"/>
+        <Performance>
+          <UValue>2.692</UValue>
+        </Performance>
+        <Material MaterialName="MAT-CC05 8 HW CONCRETE" Roughness="Rough" Thickness="0.20321" Conductivity="1.311" Density="2240" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material-R MaterialName="CP02 CARPET PAD" Roughness="VeryRough" ThermalResistance="0.21648" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.8"/>
+      </ext-slab>
+      <exposed-floor>
+        <ConstructionName instance="Mass_NR_ExposedFloor" description="NR" CostPer="27.3818" InstallCost="11.7982" CostUnits="$/m^2" DataSource="Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)"/>
+        <Performance>
+          <UValue>2.692</UValue>
+        </Performance>
+        <Material MaterialName="MAT-CC05 8 HW CONCRETE" Roughness="Rough" Thickness="0.20321" Conductivity="1.311" Density="2240" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material-R MaterialName="CP02 CARPET PAD" Roughness="VeryRough" ThermalResistance="0.21648" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.8"/>
+      </exposed-floor>
+      <attic-floor>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-5_Attic Floor_AtticFloor" description="R-30" CostPer="15.0182" InstallCost="18.5779" CostUnits="$/m^2" DataSource="Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)"/>
+        <Performance>
+          <UValue>0.1995</UValue>
+        </Performance>
+        <Material MaterialName="1/2IN Gypsum Top" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="784.9" SpecificHeat="830" AbsorThermal="0.9" AbsorSolar="0.92" AbsorVis="0.92"/>
+        <Material MaterialName="AtticFloor Insulation" Roughness="MediumRough" Thickness="0.237853" Conductivity="0.049" Density="265" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="1/2IN Gypsum Bottom" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="784.9" SpecificHeat="830" AbsorThermal="0.9" AbsorSolar="0.92" AbsorVis="0.92"/>
+      </attic-floor>
+    </OpaqueConstructs>
+  </SpecificConstructs>
+  <Building>
+    <Name>MED_RETAIL_TSD_PLUG1_BASE</Name>
+    <LegalNoticeType>General</LegalNoticeType>
+    <Area CostUnits="$/m^2">4645</Area>
+    <NumFloors>1</NumFloors>
+    <PerimDepth>4.6</PerimDepth>
+    <FloortoFloorHeight>6.1</FloortoFloorHeight>
+    <Rotation>0</Rotation>
+    <SuppressFloorMultipliers>true</SuppressFloorMultipliers>
+    <Footprint>true</Footprint>
+    <Floor>
+      <FootprintType>Retail</FootprintType>
+      <Retail Length1="1.25" X1="4.6" X2="4.6" X3="8.5" Y1="3" Y2="4.6" Y3="4.6">
+        <ZoneLayout>Minimum Zones</ZoneLayout>
+      </Retail>
+    </Floor>
+    <Zone>
+      <Name>ZN_1_FLR_1_SEC_1</Name>
+      <ZoneType>Normal</ZoneType>
+      <PrimarySpaceType>Retail</PrimarySpaceType>
+      <SecondarySpaceType>Sales Area</SecondarySpaceType>
+      <Ceiling>
+        <EnableTopLight>true</EnableTopLight>
+      </Ceiling>
+      <Surfaces>
+        <SurfaceNormal>East</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>North</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>South</SurfaceNormal>
+        <Fenestration>
+          <AreaFraction CostUnits="$">0.1387</AreaFraction>
+        </Fenestration>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>West</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <InternalGains>
+        <People CostUnits="$">
+          <PeopleDensity>16.14</PeopleDensity>
+        </People>
+        <Lights CostPer="2268" InstallCost="1932" FixedOM="190" CostUnits="$/kW">
+          <PowerDensity>18.29</PowerDensity>
+          <FractionRadiant>0.2</FractionRadiant>
+          <FractionReturn>0</FractionReturn>
+        </Lights>
+        <Equipment CostUnits="$">
+          <EquipmentName>MiscPlug</EquipmentName>
+          <EquipmentType>Electric</EquipmentType>
+          <PowerDensity>4.3056</PowerDensity>
+          <RadiantFraction>0</RadiantFraction>
+        </Equipment>
+      </InternalGains>
+      <ExternalGains/>
+      <Infiltration>
+        <Rate>0.24</Rate>
+        <Schedule>INFIL_HALF_ON_SCH</Schedule>
+      </Infiltration>
+    </Zone>
+    <Zone>
+      <Name>ZN_1_FLR_1_SEC_2</Name>
+      <ZoneType>Normal</ZoneType>
+      <PrimarySpaceType>Retail</PrimarySpaceType>
+      <SecondarySpaceType>Corridor, Transition</SecondarySpaceType>
+      <Ceiling>
+        <EnableTopLight>true</EnableTopLight>
+      </Ceiling>
+      <Surfaces>
+        <SurfaceNormal>East</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>North</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>South</SurfaceNormal>
+        <Fenestration>
+          <AreaFraction CostUnits="$">0.6857</AreaFraction>
+        </Fenestration>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>West</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <InternalGains>
+        <People CostUnits="$">
+          <PeopleDensity>16.14</PeopleDensity>
+        </People>
+        <Lights CostPer="2268" InstallCost="1932" FixedOM="190" CostUnits="$/kW">
+          <PowerDensity>5.38</PowerDensity>
+          <FractionRadiant>0.2</FractionRadiant>
+          <FractionReturn>0</FractionReturn>
+        </Lights>
+      </InternalGains>
+      <ExternalGains/>
+      <Infiltration>
+        <Rate>0.24</Rate>
+        <Schedule>INFIL_HALF_ON_SCH</Schedule>
+      </Infiltration>
+    </Zone>
+    <Zone>
+      <Name>ZN_1_FLR_1_SEC_3</Name>
+      <ZoneType>Normal</ZoneType>
+      <PrimarySpaceType>Retail</PrimarySpaceType>
+      <SecondarySpaceType>Enclosed Office</SecondarySpaceType>
+      <Ceiling>
+        <EnableTopLight>true</EnableTopLight>
+      </Ceiling>
+      <Surfaces>
+        <SurfaceNormal>East</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>North</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>South</SurfaceNormal>
+        <Fenestration>
+          <AreaFraction CostUnits="$">0.1387</AreaFraction>
+        </Fenestration>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>West</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <InternalGains>
+        <People CostUnits="$">
+          <PeopleDensity>16.14</PeopleDensity>
+        </People>
+        <Lights CostPer="2268" InstallCost="1932" FixedOM="190" CostUnits="$/kW">
+          <PowerDensity>11.84</PowerDensity>
+          <FractionRadiant>0.2</FractionRadiant>
+          <FractionReturn>0</FractionReturn>
+        </Lights>
+        <Equipment CostUnits="$">
+          <EquipmentName>MiscPlug</EquipmentName>
+          <EquipmentType>Electric</EquipmentType>
+          <PowerDensity>9.7413</PowerDensity>
+          <RadiantFraction>0</RadiantFraction>
+        </Equipment>
+      </InternalGains>
+      <ExternalGains/>
+      <Infiltration>
+        <Rate>0.24</Rate>
+        <Schedule>INFIL_HALF_ON_SCH</Schedule>
+      </Infiltration>
+    </Zone>
+    <Zone>
+      <Name>ZN_1_FLR_1_SEC_4</Name>
+      <ZoneType>Normal</ZoneType>
+      <PrimarySpaceType>Retail</PrimarySpaceType>
+      <SecondarySpaceType>Sales Area</SecondarySpaceType>
+      <Ceiling>
+        <EnableTopLight>true</EnableTopLight>
+      </Ceiling>
+      <Surfaces>
+        <SurfaceNormal>East</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>North</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>South</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>West</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <InternalGains>
+        <People CostUnits="$">
+          <PeopleDensity>16.14</PeopleDensity>
+        </People>
+        <Lights CostPer="2268" InstallCost="1932" FixedOM="190" CostUnits="$/kW">
+          <PowerDensity>18.29</PowerDensity>
+          <FractionRadiant>0.2</FractionRadiant>
+          <FractionReturn>0</FractionReturn>
+        </Lights>
+        <Equipment CostUnits="$">
+          <EquipmentName>MiscPlug</EquipmentName>
+          <EquipmentType>Electric</EquipmentType>
+          <PowerDensity>2.1528</PowerDensity>
+          <RadiantFraction>0</RadiantFraction>
+        </Equipment>
+      </InternalGains>
+      <ExternalGains/>
+      <Infiltration>
+        <Rate>0.24</Rate>
+        <Schedule>INFIL_HALF_ON_SCH</Schedule>
+      </Infiltration>
+    </Zone>
+    <Zone>
+      <Name>ZN_1_FLR_1_SEC_5</Name>
+      <ZoneType>Normal</ZoneType>
+      <PrimarySpaceType>Retail</PrimarySpaceType>
+      <SecondarySpaceType>Sales Area</SecondarySpaceType>
+      <Ceiling>
+        <EnableTopLight>true</EnableTopLight>
+      </Ceiling>
+      <Surfaces>
+        <SurfaceNormal>East</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>North</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>South</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>West</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <InternalGains>
+        <People CostUnits="$">
+          <PeopleDensity>16.14</PeopleDensity>
+        </People>
+        <Lights CostPer="2268" InstallCost="1932" FixedOM="190" CostUnits="$/kW">
+          <PowerDensity>18.29</PowerDensity>
+          <FractionRadiant>0.2</FractionRadiant>
+          <FractionReturn>0</FractionReturn>
+        </Lights>
+        <Equipment CostUnits="$">
+          <EquipmentName>MiscPlug</EquipmentName>
+          <EquipmentType>Electric</EquipmentType>
+          <PowerDensity>2.1528</PowerDensity>
+          <RadiantFraction>0</RadiantFraction>
+        </Equipment>
+      </InternalGains>
+      <ExternalGains/>
+      <Infiltration>
+        <Rate>0.24</Rate>
+        <Schedule>INFIL_HALF_ON_SCH</Schedule>
+      </Infiltration>
+    </Zone>
+    <Zone>
+      <Name>ZN_1_FLR_1_SEC_6</Name>
+      <ZoneType>Normal</ZoneType>
+      <PrimarySpaceType>Retail</PrimarySpaceType>
+      <SecondarySpaceType>Sales Area</SecondarySpaceType>
+      <Ceiling>
+        <EnableTopLight>true</EnableTopLight>
+      </Ceiling>
+      <Surfaces>
+        <SurfaceNormal>East</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>North</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>South</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>West</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <InternalGains>
+        <People CostUnits="$">
+          <PeopleDensity>16.14</PeopleDensity>
+        </People>
+        <Lights CostPer="2268" InstallCost="1932" FixedOM="190" CostUnits="$/kW">
+          <PowerDensity>18.29</PowerDensity>
+          <FractionRadiant>0.2</FractionRadiant>
+          <FractionReturn>0</FractionReturn>
+        </Lights>
+        <Equipment CostUnits="$">
+          <EquipmentName>MiscPlug</EquipmentName>
+          <EquipmentType>Electric</EquipmentType>
+          <PowerDensity>2.1528</PowerDensity>
+          <RadiantFraction>0</RadiantFraction>
+        </Equipment>
+      </InternalGains>
+      <ExternalGains/>
+      <Infiltration>
+        <Rate>0.24</Rate>
+        <Schedule>INFIL_HALF_ON_SCH</Schedule>
+      </Infiltration>
+    </Zone>
+    <Zone>
+      <Name>ZN_1_FLR_1_SEC_7</Name>
+      <ZoneType>Normal</ZoneType>
+      <PrimarySpaceType>Retail</PrimarySpaceType>
+      <SecondarySpaceType>Sales Area</SecondarySpaceType>
+      <Ceiling>
+        <EnableTopLight>true</EnableTopLight>
+      </Ceiling>
+      <Surfaces>
+        <SurfaceNormal>East</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>North</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>South</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>West</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <InternalGains>
+        <People CostUnits="$">
+          <PeopleDensity>16.14</PeopleDensity>
+        </People>
+        <Lights CostPer="2268" InstallCost="1932" FixedOM="190" CostUnits="$/kW">
+          <PowerDensity>18.29</PowerDensity>
+          <FractionRadiant>0.2</FractionRadiant>
+          <FractionReturn>0</FractionReturn>
+        </Lights>
+        <Equipment CostUnits="$">
+          <EquipmentName>MiscPlug</EquipmentName>
+          <EquipmentType>Electric</EquipmentType>
+          <PowerDensity>2.1528</PowerDensity>
+          <RadiantFraction>0</RadiantFraction>
+        </Equipment>
+      </InternalGains>
+      <ExternalGains/>
+      <Infiltration>
+        <Rate>0.24</Rate>
+        <Schedule>INFIL_HALF_ON_SCH</Schedule>
+      </Infiltration>
+    </Zone>
+    <Zone>
+      <Name>ZN_1_FLR_1_SEC_8</Name>
+      <ZoneType>Normal</ZoneType>
+      <PrimarySpaceType>Retail</PrimarySpaceType>
+      <SecondarySpaceType>Active Storage</SecondarySpaceType>
+      <Ceiling>
+        <EnableTopLight>true</EnableTopLight>
+      </Ceiling>
+      <Surfaces>
+        <SurfaceNormal>East</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>North</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>South</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>West</SurfaceNormal>
+        <Fenestration/>
+      </Surfaces>
+      <InternalGains>
+        <People CostUnits="$">
+          <PeopleDensity>16.14</PeopleDensity>
+        </People>
+        <Lights CostPer="2268" InstallCost="1932" FixedOM="190" CostUnits="$/kW">
+          <PowerDensity>8.61</PowerDensity>
+          <FractionRadiant>0.2</FractionRadiant>
+          <FractionReturn>0</FractionReturn>
+        </Lights>
+        <Equipment CostUnits="$">
+          <EquipmentName>MiscPlug</EquipmentName>
+          <EquipmentType>Electric</EquipmentType>
+          <PowerDensity>2.1528</PowerDensity>
+          <RadiantFraction>0</RadiantFraction>
+        </Equipment>
+      </InternalGains>
+      <ExternalGains/>
+      <Infiltration>
+        <Rate>0.24</Rate>
+        <Schedule>INFIL_HALF_ON_SCH</Schedule>
+      </Infiltration>
+    </Zone>
+  </Building>
+  <ScheduleSet instance="Schedule_Retail_50_AEDG_TSD"/>
+  <HVACSystem CostPer="384.44" InstallCost="44.92" FixedOM="37.53" ExpectedLife="15" SalvageCost="33" CostUnits="$/kW" DataSource="RMH Calculations">
+    <DetailedHVAC>
+      <ZoneScope>Each Zone Separate</ZoneScope>
+      <SystemScope>Building</SystemScope>
+      <Zone>
+        <ZoneName>ZN_1_FLR_1_SEC_1</ZoneName>
+        <SpaceConditioning>
+          <Sizing>
+            <OAPerArea>0.0006</OAPerArea>
+            <OAPerPerson>0.0038</OAPerPerson>
+          </Sizing>
+          <Equipment>
+            <DirectAir>
+              <AirSystemName>PSZ-AC</AirSystemName>
+            </DirectAir>
+          </Equipment>
+        </SpaceConditioning>
+      </Zone>
+      <Zone>
+        <ZoneName>ZN_1_FLR_1_SEC_2</ZoneName>
+        <SpaceConditioning>
+          <Sizing>
+            <OAPerArea>0.0003</OAPerArea>
+            <OAPerPerson>0.0038</OAPerPerson>
+          </Sizing>
+          <Equipment>
+            <DirectAir>
+              <AirSystemName>PSZ-AC</AirSystemName>
+            </DirectAir>
+          </Equipment>
+        </SpaceConditioning>
+      </Zone>
+      <Zone>
+        <ZoneName>ZN_1_FLR_1_SEC_3</ZoneName>
+        <SpaceConditioning>
+          <Sizing>
+            <OAPerArea>0.0003</OAPerArea>
+            <OAPerPerson>0.0025</OAPerPerson>
+          </Sizing>
+          <Equipment>
+            <DirectAir>
+              <AirSystemName>PSZ-AC</AirSystemName>
+            </DirectAir>
+          </Equipment>
+        </SpaceConditioning>
+        <ProcessLoads>
+          <WaterSystems>
+            <Uses>
+              <PerType>EachPerHour</PerType>
+              <UseRatePer>0.06814</UseRatePer>
+              <TemperatureTarget>43.3</TemperatureTarget>
+              <ScheduleName>BLDG_SWH_SCH</ScheduleName>
+            </Uses>
+          </WaterSystems>
+        </ProcessLoads>
+      </Zone>
+      <Zone>
+        <ZoneName>ZN_1_FLR_1_SEC_4</ZoneName>
+        <SpaceConditioning>
+          <Sizing>
+            <OAPerArea>0.0006</OAPerArea>
+            <OAPerPerson>0.0038</OAPerPerson>
+          </Sizing>
+          <Equipment>
+            <DirectAir>
+              <AirSystemName>PSZ-AC</AirSystemName>
+            </DirectAir>
+          </Equipment>
+        </SpaceConditioning>
+      </Zone>
+      <Zone>
+        <ZoneName>ZN_1_FLR_1_SEC_5</ZoneName>
+        <SpaceConditioning>
+          <Sizing>
+            <OAPerArea>0.0006</OAPerArea>
+            <OAPerPerson>0.0038</OAPerPerson>
+          </Sizing>
+          <Equipment>
+            <DirectAir>
+              <AirSystemName>PSZ-AC</AirSystemName>
+            </DirectAir>
+          </Equipment>
+        </SpaceConditioning>
+      </Zone>
+      <Zone>
+        <ZoneName>ZN_1_FLR_1_SEC_6</ZoneName>
+        <SpaceConditioning>
+          <Sizing>
+            <OAPerArea>0.0006</OAPerArea>
+            <OAPerPerson>0.0038</OAPerPerson>
+          </Sizing>
+          <Equipment>
+            <DirectAir>
+              <AirSystemName>PSZ-AC</AirSystemName>
+            </DirectAir>
+          </Equipment>
+        </SpaceConditioning>
+      </Zone>
+      <Zone>
+        <ZoneName>ZN_1_FLR_1_SEC_7</ZoneName>
+        <SpaceConditioning>
+          <Sizing>
+            <OAPerArea>0.0006</OAPerArea>
+            <OAPerPerson>0.0038</OAPerPerson>
+          </Sizing>
+          <Equipment>
+            <DirectAir>
+              <AirSystemName>PSZ-AC</AirSystemName>
+            </DirectAir>
+          </Equipment>
+        </SpaceConditioning>
+      </Zone>
+      <Zone>
+        <ZoneName>ZN_1_FLR_1_SEC_8</ZoneName>
+        <SpaceConditioning>
+          <Sizing>
+            <OAPerArea>0.0006</OAPerArea>
+          </Sizing>
+          <Equipment>
+            <DirectAir>
+              <AirSystemName>PSZ-AC</AirSystemName>
+            </DirectAir>
+          </Equipment>
+        </SpaceConditioning>
+      </Zone>
+      <Systems>
+        <HVACSystems>
+          <AirSystem>
+            <DistributionType>SingleZone</DistributionType>
+            <Name>PSZ-AC</Name>
+            <StdCoolingTable>Unitary Air Conditioners</StdCoolingTable>
+            <StdCoolingEquipType>Air Conditioners</StdCoolingEquipType>
+            <StdCoolingCondenserType>Air Cooled</StdCoolingCondenserType>
+            <UseNightCycle>true</UseNightCycle>
+            <SATManagerType>OutsideAir</SATManagerType>
+            <Equipment>
+              <OutsideAirSystem>
+                <UseEconomizer>false</UseEconomizer>
+                <MotorizedDamper>false</MotorizedDamper>
+              </OutsideAirSystem>
+              <Coil>
+                <Type>Cooling</Type>
+                <Fuel>Electricity</Fuel>
+                <COP>3.69</COP>
+              </Coil>
+              <Coil>
+                <Type>Heating</Type>
+                <Fuel>Gas</Fuel>
+                <Efficiency>0.8</Efficiency>
+              </Coil>
+              <Fan>
+                <Type>Constant</Type>
+                <Efficiency>0.306</Efficiency>
+                <PressureDrop>381</PressureDrop>
+              </Fan>
+            </Equipment>
+          </AirSystem>
+          <LiquidSystemHotWater>
+            <SWHTargetTemp>0</SWHTargetTemp>
+            <Equipment>
+              <Pump>
+                <Type>Constant</Type>
+                <Efficiency>1</Efficiency>
+                <Head>0.1</Head>
+              </Pump>
+              <WaterHeater>
+                <Type>Storage Tank</Type>
+                <Fuel>Electricity</Fuel>
+                <Efficiency>0.864</Efficiency>
+                <Volume>0.1893</Volume>
+                <Capacity>845000</Capacity>
+                <EffectiveUValue>0</EffectiveUValue>
+                <HeightAspectRatio>0</HeightAspectRatio>
+                <NumberNodes>0</NumberNodes>
+              </WaterHeater>
+            </Equipment>
+          </LiquidSystemHotWater>
+        </HVACSystems>
+      </Systems>
+    </DetailedHVAC>
+  </HVACSystem>
+  <ExteriorLoads>
+    <ExteriorFacadeLights instance="3.2808"/>
+  </ExteriorLoads>
+  <MacroControl path="./include" ReportVarSetKey="BasicReportsAndABUPS_Benchmark"/>
+  <CodeStandardSettings>
+    <RoofConstruction>Insulation Entirely Above Deck</RoofConstruction>
+    <ExtWallConstruction>Steel-Framed</ExtWallConstruction>
+    <ExtSlabConstruction>Unheated - 8in Slab with Carpet</ExtSlabConstruction>
+    <WholeBuildingMethod>false</WholeBuildingMethod>
+  </CodeStandardSettings>
+</HPBParametization>

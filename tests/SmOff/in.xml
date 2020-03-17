@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Written by HPBxmlManager procedure by NREL-->
+<HPBParametization xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\..\schema\HPBxml.xsd">
+  <HPBXmlSettings>
+    <HPBXmlVersion>0.1.2.4</HPBXmlVersion>
+  </HPBXmlSettings>
+  <OptEPlusMetadata>
+    <OptEPlusVersion>0.1.2.148</OptEPlusVersion>
+    <OptEPlusDatabase>C:\Projects\Benchmark\Benchmark.opt</OptEPlusDatabase>
+  </OptEPlusMetadata>
+  <SimSettings>
+    <TimeStepInHour>6</TimeStepInHour>
+    <UpdateShadowInterval>7</UpdateShadowInterval>
+    <BaseCase>true</BaseCase>
+    <RunWeatherFile>true</RunWeatherFile>
+    <MaxHVACIterations>20</MaxHVACIterations>
+    <MinSystemTimeStep>1</MinSystemTimeStep>
+    <EnergyPlusVersion>8.0</EnergyPlusVersion>
+  </SimSettings>
+  <SiteParams>
+    <WeatherFile filename="USA_IL_Chicago-OHare_TMY2.epw"/>
+    <DesignDays instance="USA_IL_CHICAGO-OHARE"/>
+    <UtilityCosts instance="PSI_CommRates"/>
+    <PrimarySpaceType>Office</PrimarySpaceType>
+    <SecondarySpaceType>Whole Building</SecondarySpaceType>
+    <ClimateZones>
+      <ClimateZone>ASHRAE_1999_B-17</ClimateZone>
+      <ClimateZone>ASHRAE_2004_5A</ClimateZone>
+      <ClimateZone>ASHRAE_1989_26</ClimateZone>
+    </ClimateZones>
+    <SiteMetaData SiteStatsIndex="0" WeightFactor="0" BldgID="0" CensusDivision="3" CensusRegion="2" PrincipleBuildingActivity="2" MoreDetailedActivity="0"/>
+  </SiteParams>
+  <SpecificConstructs StaticObjectsFile="HPBStandardConstructions.imf">
+    <UseSimpleNamesForConstructions>true</UseSimpleNamesForConstructions>
+    <FenestrationSystem>
+      <south>
+        <ConstructionName instance="std_window_UValue_3.237_SHGC_0.49_VT_0.622" CostPer="209.729" InstallCost="292.5" FixedOM="2.34" ExpectedLife="15" CostUnits="$/m^2" DataSource="Closest match from 90.1 database (1999)"/>
+        <Performance>
+          <Type>fixed</Type>
+          <UValue>3.237</UValue>
+          <SHGC>0.49</SHGC>
+          <VisibleTrans>0.622</VisibleTrans>
+        </Performance>
+        <WindowGlass MaterialName="Theoretical Glass [67]" Thickness="0.003" SolarTrans="0.482641" SolarReflectFront="0.467359" SolarReflectBack="0.467359" VisibleTrans="0.621562" VisibleReflectFront="0.328438" VisibleReflectBack="0.328438" IRTrans="0" IREmmFront="0.9" IREmmBack="0.9" Conductivity="0.0198746"/>
+      </south>
+      <east>
+        <ConstructionName instance="std_window_UValue_3.237_SHGC_0.49_VT_0.622" CostPer="209.729" InstallCost="292.5" FixedOM="2.34" ExpectedLife="15" CostUnits="$/m^2" DataSource="Closest match from 90.1 database (1999)"/>
+        <Performance>
+          <Type>fixed</Type>
+          <UValue>3.237</UValue>
+          <SHGC>0.49</SHGC>
+          <VisibleTrans>0.622</VisibleTrans>
+        </Performance>
+        <WindowGlass MaterialName="Theoretical Glass [67]" Thickness="0.003" SolarTrans="0.482641" SolarReflectFront="0.467359" SolarReflectBack="0.467359" VisibleTrans="0.621562" VisibleReflectFront="0.328438" VisibleReflectBack="0.328438" IRTrans="0" IREmmFront="0.9" IREmmBack="0.9" Conductivity="0.0198746"/>
+      </east>
+      <north>
+        <ConstructionName instance="std_window_UValue_3.237_SHGC_0.49_VT_0.622" CostPer="209.729" InstallCost="292.5" FixedOM="2.34" ExpectedLife="15" CostUnits="$/m^2" DataSource="Closest match from 90.1 database (1999)"/>
+        <Performance>
+          <Type>fixed</Type>
+          <UValue>3.237</UValue>
+          <SHGC>0.49</SHGC>
+          <VisibleTrans>0.622</VisibleTrans>
+        </Performance>
+        <WindowGlass MaterialName="Theoretical Glass [67]" Thickness="0.003" SolarTrans="0.482641" SolarReflectFront="0.467359" SolarReflectBack="0.467359" VisibleTrans="0.621562" VisibleReflectFront="0.328438" VisibleReflectBack="0.328438" IRTrans="0" IREmmFront="0.9" IREmmBack="0.9" Conductivity="0.0198746"/>
+      </north>
+      <west>
+        <ConstructionName instance="std_window_UValue_3.237_SHGC_0.49_VT_0.622" CostPer="209.729" InstallCost="292.5" FixedOM="2.34" ExpectedLife="15" CostUnits="$/m^2" DataSource="Closest match from 90.1 database (1999)"/>
+        <Performance>
+          <Type>fixed</Type>
+          <UValue>3.237</UValue>
+          <SHGC>0.49</SHGC>
+          <VisibleTrans>0.622</VisibleTrans>
+        </Performance>
+        <WindowGlass MaterialName="Theoretical Glass [67]" Thickness="0.003" SolarTrans="0.482641" SolarReflectFront="0.467359" SolarReflectBack="0.467359" VisibleTrans="0.621562" VisibleReflectFront="0.328438" VisibleReflectBack="0.328438" IRTrans="0" IREmmFront="0.9" IREmmBack="0.9" Conductivity="0.0198746"/>
+      </west>
+      <SkylightConst>
+        <ConstructionName instance="std_window_UValue_3.919_SHGC_0.49_VT_0.622" CostPer="215.97" InstallCost="292.5" FixedOM="2.34" ExpectedLife="15" CostUnits="$/m^2" DataSource="Closest match from 90.1 database (1999)"/>
+        <Performance>
+          <Type>All Skylights without Curb</Type>
+          <UValue>3.919</UValue>
+          <SHGC>0.49</SHGC>
+          <VisibleTrans>0.622</VisibleTrans>
+        </Performance>
+        <WindowGlass MaterialName="Theoretical Glass [81]" Thickness="0.003" SolarTrans="0.481761" SolarReflectFront="0.468239" SolarReflectBack="0.468239" VisibleTrans="0.621562" VisibleReflectFront="0.328438" VisibleReflectBack="0.328438" IRTrans="0" IREmmFront="0.9" IREmmBack="0.9" Conductivity="0.03026"/>
+      </SkylightConst>
+    </FenestrationSystem>
+    <DaylightFenestrationSystem/>
+    <OpaqueConstructs>
+      <roofs>
+        <ConstructionName instance="Attic and Other_R-30_Roof" description="R-30" CostPer="14.9259" InstallCost="18.4638" CostUnits="$/m^2" DataSource="Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)"/>
+        <Performance>
+          <Type>Attic and Other</Type>
+          <UValue>0.2013</UValue>
+        </Performance>
+        <Material MaterialName="Wood Shingles" Roughness="VeryRough" Thickness="0.0178" Conductivity="0.115" Density="513" SpecificHeat="1255" AbsorThermal="0.9" AbsorSolar="0.78" AbsorVis="0.78"/>
+        <Material MaterialName="1IN Wood Decking" Roughness="MediumSmooth" Thickness="0.0254" Conductivity="0.1211" Density="593" SpecificHeat="2510" AbsorThermal="0.9" AbsorSolar="0.78" AbsorVis="0.78"/>
+        <Material MaterialName="Roof Insulation [2]" Roughness="MediumRough" Thickness="0.221604" Conductivity="0.049" Density="265" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="1/2IN Gypsum" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="784.9" SpecificHeat="830" AbsorThermal="0.9" AbsorSolar="0.92" AbsorVis="0.92"/>
+      </roofs>
+      <int-walls>
+        <ConstructionName instance="Standard_Int-Wall"/>
+        <Performance>
+          <Type>Standard</Type>
+        </Performance>
+        <Material MaterialName="GP01 1/2 GYPSUM" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="800" SpecificHeat="1090" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.5"/>
+        <Material MaterialName="GP01 1/2 GYPSUM" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="800" SpecificHeat="1090" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.5"/>
+      </int-walls>
+      <ext-walls>
+        <ConstructionName instance="Mass_R-7.6 ci_Ext-wall" description="R-7.6 ci" CostPer="42.9231" InstallCost="18.4946" CostUnits="$/m^2" DataSource="Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)"/>
+        <Performance>
+          <Type>Mass</Type>
+          <UValue>0.7795</UValue>
+        </Performance>
+        <Material MaterialName="1IN Stucco " Roughness="Smooth" Thickness="0.0253" Conductivity="0.6918" Density="1858" SpecificHeat="837" AbsorThermal="0.9" AbsorSolar="0.92" AbsorVis="0.92"/>
+        <Material MaterialName="8IN Concrete HW" Roughness="MediumRough" Thickness="0.2033" Conductivity="1.7296" Density="2243" SpecificHeat="837" AbsorThermal="0.9" AbsorSolar="0.65" AbsorVis="0.65"/>
+        <Material MaterialName="Wall Insulation [5]" Roughness="MediumRough" Thickness="0.0453274" Conductivity="0.0432" Density="91" SpecificHeat="837" AbsorThermal="0.9" AbsorSolar="0.5" AbsorVis="0.5"/>
+        <Material MaterialName="1/2IN Gypsum" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="784.9" SpecificHeat="830" AbsorThermal="0.9" AbsorSolar="0.92" AbsorVis="0.92"/>
+      </ext-walls>
+      <ext-slab>
+        <ConstructionName instance="Unheated - 4in Slab with Carpet_Ext-slab" CostPer="24.86" InstallCost="20.66" CostUnits="$/m^2" DataSource="MEANS 2005 - B1010.258"/>
+        <Performance>
+          <Type>Unheated - 4in Slab with Carpet</Type>
+          <UValue>3.402</UValue>
+        </Performance>
+        <Material MaterialName="MAT-CC05 4 HW CONCRETE" Roughness="Rough" Thickness="0.1016" Conductivity="1.311" Density="2240" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material-R MaterialName="CP02 CARPET PAD" Roughness="VeryRough" ThermalResistance="0.21648" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.8"/>
+      </ext-slab>
+      <exposed-floor>
+        <ConstructionName instance="Mass_R-8.3 ci_ExposedFloor" description="R-8.3 ci" CostPer="34.6727" InstallCost="14.9397" CostUnits="$/m^2" DataSource="Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)"/>
+        <Performance>
+          <Type>Mass</Type>
+          <UValue>0.5605</UValue>
+        </Performance>
+        <Material MaterialName="Floor Insulation [2]" Roughness="MediumRough" Thickness="0.0635689" Conductivity="0.045" Density="265" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="MAT-CC05 8 HW CONCRETE" Roughness="Rough" Thickness="0.20321" Conductivity="1.311" Density="2240" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material-R MaterialName="CP02 CARPET PAD" Roughness="VeryRough" ThermalResistance="0.21648" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.8"/>
+      </exposed-floor>
+      <attic-floor>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-5_Attic Floor_AtticFloor" description="R-30" CostPer="15.0182" InstallCost="18.5779" CostUnits="$/m^2" DataSource="Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)"/>
+        <Performance>
+          <UValue>0.1995</UValue>
+        </Performance>
+        <Material MaterialName="1/2IN Gypsum Top" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="784.9" SpecificHeat="830" AbsorThermal="0.9" AbsorSolar="0.92" AbsorVis="0.92"/>
+        <Material MaterialName="AtticFloor Insulation" Roughness="MediumRough" Thickness="0.237853" Conductivity="0.049" Density="265" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="1/2IN Gypsum Bottom" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="784.9" SpecificHeat="830" AbsorThermal="0.9" AbsorSolar="0.92" AbsorVis="0.92"/>
+      </attic-floor>
+      <attic-roof>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-5_IEAD_Roof" description="R-15 ci" CostPer="34.3904" InstallCost="14.818" CostUnits="$/m^2" DataSource="Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)"/>
+        <Performance>
+          <Type>Insulation Entirely Above Deck</Type>
+          <UValue>0.3832</UValue>
+        </Performance>
+        <Material MaterialName="Roof Membrane" Roughness="VeryRough" Thickness="0.0095" Conductivity="0.16" Density="1121.29" SpecificHeat="1460" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="Metal Decking" Roughness="MediumSmooth" Thickness="0.001524" Conductivity="45.006" Density="7680" SpecificHeat="418.4" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.3"/>
+      </attic-roof>
+      <door>
+        <ConstructionName instance="Swinging_NR_door" description="NR"/>
+        <Performance>
+          <Type>Swinging</Type>
+          <UValue>3.975</UValue>
+        </Performance>
+        <Material MaterialName="METAL Door Medium 18Ga_1" Roughness="Smooth" Thickness="0.0013106" Conductivity="45.3149" Density="7833.03" SpecificHeat="502.08" AbsorThermal="0.8" AbsorSolar="0.5" AbsorVis="0.5"/>
+        <Material-R MaterialName="AIR" Roughness="Smooth" ThermalResistance="0.251489" AbsorThermal="0.8" AbsorSolar="0.5" AbsorVis="0.5"/>
+        <Material MaterialName="METAL Door Medium 18Ga_2" Roughness="Smooth" Thickness="0.0013106" Conductivity="45.3149" Density="7833.03" SpecificHeat="502.08" AbsorThermal="0.8" AbsorSolar="0.5" AbsorVis="0.5"/>
+      </door>
+      <non-swinging-door>
+        <ConstructionName instance="Non-Swinging_NR_door" description="NR"/>
+        <Performance>
+          <Type>Non-Swinging</Type>
+          <UValue>8.233</UValue>
+        </Performance>
+        <Material MaterialName="METAL Door Medium 18Ga_1" Roughness="Smooth" Thickness="0.0013106" Conductivity="45.3149" Density="7833.03" SpecificHeat="502.08" AbsorThermal="0.8" AbsorSolar="0.5" AbsorVis="0.5"/>
+        <Material-R MaterialName="AIR [1]" Roughness="Smooth" ThermalResistance="0.121409" AbsorThermal="0.8" AbsorSolar="0.5" AbsorVis="0.5"/>
+        <Material MaterialName="METAL Door Medium 18Ga_2" Roughness="Smooth" Thickness="0.0013106" Conductivity="45.3149" Density="7833.03" SpecificHeat="502.08" AbsorThermal="0.8" AbsorSolar="0.5" AbsorVis="0.5"/>
+      </non-swinging-door>
+    </OpaqueConstructs>
+  </SpecificConstructs>
+  <Building>
+    <Name>Benchmark Small Office New V1.1_3.1</Name>
+    <HeaderInformation>! DOE Commercial Building Benchmark
+! Small Office, new construction
+! Benchmark V 1.1_3.1
+! EnergyPlus V 3.1
+! ASHRAE Standards 90.1-2004 and 62-1999
+!
+! Description:  Single story, five zone office building.
+! Form:         Area = 511 m2 (5,500 ft2); Number of Stories = 1; Shape = rectangle, Aspect ratio = 1.5
+! Envelope:     Envelope thermal properties vary with climate according to ASHRAE Standard 90.1-2004.
+!               Opaque constructions: mass walls; attic roof; slab-on-grade floor
+!               Windows: window-to-wall ratio = 19%, equal distribution of punched windows
+!               Infiltration = 0.4 cfm/ft2 above grade wall area at 0.3 in wc (75 Pa) adjusted to 0.016 in wc (4 Pa).
+!                              25% of full value when ventilation system on.
+! HVAC:         PSZ-AC, gas furnace
+!               No economizers, per ASHRAE 90.1-2004
+!
+! Int. gains:   lights = 10.76 W/m2 (1.0 W/ft2);
+!               elec. plug loads = 8.07 W/m2 (0.75 W/ft2)
+!               gas plug load = 0 W/m2 (0 W/ft2)
+!               people = 28 total; 5.38/100 m2 (5.0/1000 ft2)
+!
+! Detached Shading:               None
+! Daylight:                       None
+! Natural Ventilation:            None
+! Zonal Equipment:                None
+! Air Primary Loops:              PSZ
+! Plant Loops:                    SHWSys1
+! System Equipment Autosize:      Yes
+! Purchased Cooling:              None
+! Purchased Heating:              None
+! Coils:                          Coil:Cooling:DX:SingleSpeed; Coil:Heating:Gas
+! Pumps:                          None
+! Boilers:                        None
+! Chillers:                       None
+!</HeaderInformation>
+    <LegalNoticeType>Benchmarks</LegalNoticeType>
+    <Area>511.23</Area>
+    <NumFloors>2</NumFloors>
+    <PerimDepth>0</PerimDepth>
+    <FloortoFloorHeight>0</FloortoFloorHeight>
+    <Rotation>0</Rotation>
+    <Terrain>City</Terrain>
+    <Footprint>false</Footprint>
+    <Zone>
+      <Name>Core_ZN</Name>
+      <Description>Office</Description>
+      <ZoneType>Normal</ZoneType>
+      <PrimarySpaceType>Office</PrimarySpaceType>
+      <SecondarySpaceType>Whole Building</SecondarySpaceType>
+      <CustomXYZ>
+        <NorthAxis>0</NorthAxis>
+        <XOrigin>0</XOrigin>
+        <YOrigin>0</YOrigin>
+        <ZOrigin>0</ZOrigin>
+        <CustomXYZSurfaces>
+          <SurfaceName>Core_ZN_floor</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="5" Y1="13.46" Z1="0"/>
+          <Vertices X1="22.69" Y1="13.46" Z1="0"/>
+          <Vertices X1="22.69" Y1="5" Z1="0"/>
+          <Vertices X1="5" Y1="5" Z1="0"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Core_ZN_wall_south</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="5" Y1="5" Z1="3.05"/>
+          <Vertices X1="5" Y1="5" Z1="0"/>
+          <Vertices X1="22.69" Y1="5" Z1="0"/>
+          <Vertices X1="22.69" Y1="5" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Core_ZN_wall_east</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="22.69" Y1="5" Z1="3.05"/>
+          <Vertices X1="22.69" Y1="5" Z1="0"/>
+          <Vertices X1="22.69" Y1="13.46" Z1="0"/>
+          <Vertices X1="22.69" Y1="13.46" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Core_ZN_wall_north</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="22.69" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="22.69" Y1="13.46" Z1="0"/>
+          <Vertices X1="5" Y1="13.46" Z1="0"/>
+          <Vertices X1="5" Y1="13.46" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Core_ZN_ceiling</SurfaceName>
+          <SurfaceType>Ceiling</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="22.69" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="5" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="5" Y1="5" Z1="3.05"/>
+          <Vertices X1="22.69" Y1="5" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Core_ZN_wall_west</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="5" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="5" Y1="13.46" Z1="0"/>
+          <Vertices X1="5" Y1="5" Z1="0"/>
+          <Vertices X1="5" Y1="5" Z1="3.05"/>
+        </CustomXYZSurfaces>
+      </CustomXYZ>
+      <InternalGains>
+        <People>
+          <PeopleDensity>5.38</PeopleDensity>
+        </People>
+        <Lights>
+          <PowerDensity>10.76</PowerDensity>
+          <FractionRadiant>0.7</FractionRadiant>
+          <FractionReturn>0</FractionReturn>
+        </Lights>
+        <Equipment>
+          <EquipmentName>MiscPlug</EquipmentName>
+          <EquipmentType>Electric</EquipmentType>
+          <PowerDensity>8.07</PowerDensity>
+          <RadiantFraction>0.5</RadiantFraction>
+          <EndUseCategory>MiscPlug</EndUseCategory>
+        </Equipment>
+      </InternalGains>
+    </Zone>
+    <Zone>
+      <Name>Perimeter_ZN_1</Name>
+      <Description>Office</Description>
+      <ZoneType>Normal</ZoneType>
+      <PrimarySpaceType>Office</PrimarySpaceType>
+      <SecondarySpaceType>Whole Building</SecondarySpaceType>
+      <CustomXYZ>
+        <NorthAxis>0</NorthAxis>
+        <XOrigin>0</XOrigin>
+        <YOrigin>0</YOrigin>
+        <ZOrigin>0</ZOrigin>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_1_floor</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="27.69" Y1="0" Z1="0"/>
+          <Vertices X1="0" Y1="0" Z1="0"/>
+          <Vertices X1="5" Y1="5" Z1="0"/>
+          <Vertices X1="22.69" Y1="5" Z1="0"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_1_wall_west</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="5" Y1="5" Z1="3.05"/>
+          <Vertices X1="5" Y1="5" Z1="0"/>
+          <Vertices X1="0" Y1="0" Z1="0"/>
+          <Vertices X1="0" Y1="0" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_1_wall_south</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="0" Y1="0" Z1="3.05"/>
+          <Vertices X1="0" Y1="0" Z1="0"/>
+          <Vertices X1="27.69" Y1="0" Z1="0"/>
+          <Vertices X1="27.69" Y1="0" Z1="3.05"/>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_1_wall_south_Window_1</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="1.39" Y1="0" Z1="2.424"/>
+            <SubVertices X1="1.39" Y1="0" Z1="0.9"/>
+            <SubVertices X1="3.22" Y1="0" Z1="0.9"/>
+            <SubVertices X1="3.22" Y1="0" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_1_wall_south_Window_2</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="6.01" Y1="0" Z1="2.424"/>
+            <SubVertices X1="6.01" Y1="0" Z1="0.9"/>
+            <SubVertices X1="7.84" Y1="0" Z1="0.9"/>
+            <SubVertices X1="7.84" Y1="0" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_1_wall_south_Window_3</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="10.62" Y1="0" Z1="2.424"/>
+            <SubVertices X1="10.62" Y1="0" Z1="0.9"/>
+            <SubVertices X1="12.45" Y1="0" Z1="0.9"/>
+            <SubVertices X1="12.45" Y1="0" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_1_wall_south_Window_4</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="15.24" Y1="0" Z1="2.424"/>
+            <SubVertices X1="15.24" Y1="0" Z1="0.9"/>
+            <SubVertices X1="17.07" Y1="0" Z1="0.9"/>
+            <SubVertices X1="17.07" Y1="0" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_1_wall_south_Window_5</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="19.85" Y1="0" Z1="2.424"/>
+            <SubVertices X1="19.85" Y1="0" Z1="0.9"/>
+            <SubVertices X1="21.68" Y1="0" Z1="0.9"/>
+            <SubVertices X1="21.68" Y1="0" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_1_wall_south_Window_6</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="24.47" Y1="0" Z1="2.424"/>
+            <SubVertices X1="24.47" Y1="0" Z1="0.9"/>
+            <SubVertices X1="26.3" Y1="0" Z1="0.9"/>
+            <SubVertices X1="26.3" Y1="0" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_1_wall_south_door</SubSurfaceName>
+            <SubSurfaceType>GlassDoor</SubSurfaceType>
+            <SubSurfaceSpecificType>Swinging</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="12.93" Y1="0" Z1="2.134"/>
+            <SubVertices X1="12.93" Y1="0" Z1="0"/>
+            <SubVertices X1="14.76" Y1="0" Z1="0"/>
+            <SubVertices X1="14.76" Y1="0" Z1="2.134"/>
+          </CustomXYZSubSurfaces>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_1_ceiling</SurfaceName>
+          <SurfaceType>Ceiling</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="0" Y1="0" Z1="3.05"/>
+          <Vertices X1="27.69" Y1="0" Z1="3.05"/>
+          <Vertices X1="22.69" Y1="5" Z1="3.05"/>
+          <Vertices X1="5" Y1="5" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_1_wall_east</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="27.69" Y1="0" Z1="3.05"/>
+          <Vertices X1="27.69" Y1="0" Z1="0"/>
+          <Vertices X1="22.69" Y1="5" Z1="0"/>
+          <Vertices X1="22.69" Y1="5" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_1_wall_north</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="22.69" Y1="5" Z1="3.05"/>
+          <Vertices X1="22.69" Y1="5" Z1="0"/>
+          <Vertices X1="5" Y1="5" Z1="0"/>
+          <Vertices X1="5" Y1="5" Z1="3.05"/>
+        </CustomXYZSurfaces>
+      </CustomXYZ>
+      <InternalGains>
+        <People>
+          <PeopleDensity>5.38</PeopleDensity>
+        </People>
+        <Lights>
+          <PowerDensity>10.76</PowerDensity>
+          <FractionRadiant>0.7</FractionRadiant>
+          <FractionReturn>0</FractionReturn>
+        </Lights>
+        <Equipment>
+          <EquipmentName>MiscPlug</EquipmentName>
+          <EquipmentType>Electric</EquipmentType>
+          <PowerDensity>8.07</PowerDensity>
+          <RadiantFraction>0.5</RadiantFraction>
+          <EndUseCategory>MiscPlug</EndUseCategory>
+        </Equipment>
+      </InternalGains>
+      <Infiltration>
+        <Rate>0.62</Rate>
+        <Schedule>INFIL_QUARTER_ON_SCH</Schedule>
+      </Infiltration>
+    </Zone>
+    <Zone>
+      <Name>Perimeter_ZN_2</Name>
+      <Description>Office</Description>
+      <ZoneType>Normal</ZoneType>
+      <PrimarySpaceType>Office</PrimarySpaceType>
+      <SecondarySpaceType>Whole Building</SecondarySpaceType>
+      <CustomXYZ>
+        <NorthAxis>0</NorthAxis>
+        <XOrigin>0</XOrigin>
+        <YOrigin>0</YOrigin>
+        <ZOrigin>0</ZOrigin>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_2_floor</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="22.69" Y1="13.46" Z1="0"/>
+          <Vertices X1="27.69" Y1="18.46" Z1="0"/>
+          <Vertices X1="27.69" Y1="0" Z1="0"/>
+          <Vertices X1="22.69" Y1="5" Z1="0"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_2_wall_east</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="27.69" Y1="0" Z1="3.05"/>
+          <Vertices X1="27.69" Y1="0" Z1="0"/>
+          <Vertices X1="27.69" Y1="18.46" Z1="0"/>
+          <Vertices X1="27.69" Y1="18.46" Z1="3.05"/>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_2_wall_east_Window_4</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="27.69" Y1="15.24" Z1="2.424"/>
+            <SubVertices X1="27.69" Y1="15.24" Z1="0.9"/>
+            <SubVertices X1="27.69" Y1="17.07" Z1="0.9"/>
+            <SubVertices X1="27.69" Y1="17.07" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_2_wall_east_Window_3</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="27.69" Y1="10.62" Z1="2.424"/>
+            <SubVertices X1="27.69" Y1="10.62" Z1="0.9"/>
+            <SubVertices X1="27.69" Y1="12.45" Z1="0.9"/>
+            <SubVertices X1="27.69" Y1="12.45" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_2_wall_east_Window_2</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="27.69" Y1="6.01" Z1="2.424"/>
+            <SubVertices X1="27.69" Y1="6.01" Z1="0.9"/>
+            <SubVertices X1="27.69" Y1="7.84" Z1="0.9"/>
+            <SubVertices X1="27.69" Y1="7.84" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_2_wall_east_Window_1</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="27.69" Y1="1.39" Z1="2.424"/>
+            <SubVertices X1="27.69" Y1="1.39" Z1="0.9"/>
+            <SubVertices X1="27.69" Y1="3.22" Z1="0.9"/>
+            <SubVertices X1="27.69" Y1="3.22" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_2_wall_north</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="27.69" Y1="18.46" Z1="3.05"/>
+          <Vertices X1="27.69" Y1="18.46" Z1="0"/>
+          <Vertices X1="22.69" Y1="13.46" Z1="0"/>
+          <Vertices X1="22.69" Y1="13.46" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_2_ceiling</SurfaceName>
+          <SurfaceType>Ceiling</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="27.69" Y1="18.46" Z1="3.05"/>
+          <Vertices X1="22.69" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="22.69" Y1="5" Z1="3.05"/>
+          <Vertices X1="27.69" Y1="0" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_2_wall_south</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="22.69" Y1="5" Z1="3.05"/>
+          <Vertices X1="22.69" Y1="5" Z1="0"/>
+          <Vertices X1="27.69" Y1="0" Z1="0"/>
+          <Vertices X1="27.69" Y1="0" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_2_wall_west</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="22.69" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="22.69" Y1="13.46" Z1="0"/>
+          <Vertices X1="22.69" Y1="5" Z1="0"/>
+          <Vertices X1="22.69" Y1="5" Z1="3.05"/>
+        </CustomXYZSurfaces>
+      </CustomXYZ>
+      <InternalGains>
+        <People>
+          <PeopleDensity>5.38</PeopleDensity>
+        </People>
+        <Lights>
+          <PowerDensity>10.76</PowerDensity>
+          <FractionRadiant>0.7</FractionRadiant>
+          <FractionReturn>0</FractionReturn>
+        </Lights>
+        <Equipment>
+          <EquipmentName>MiscPlug</EquipmentName>
+          <EquipmentType>Electric</EquipmentType>
+          <PowerDensity>8.07</PowerDensity>
+          <RadiantFraction>0.5</RadiantFraction>
+          <EndUseCategory>MiscPlug</EndUseCategory>
+        </Equipment>
+      </InternalGains>
+      <Infiltration>
+        <Rate>0.66</Rate>
+        <Schedule>INFIL_QUARTER_ON_SCH</Schedule>
+      </Infiltration>
+    </Zone>
+    <Zone>
+      <Name>Perimeter_ZN_3</Name>
+      <Description>Office</Description>
+      <ZoneType>Normal</ZoneType>
+      <PrimarySpaceType>Office</PrimarySpaceType>
+      <SecondarySpaceType>Whole Building</SecondarySpaceType>
+      <CustomXYZ>
+        <NorthAxis>0</NorthAxis>
+        <XOrigin>0</XOrigin>
+        <YOrigin>0</YOrigin>
+        <ZOrigin>0</ZOrigin>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_3_floor</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="5" Y1="13.46" Z1="0"/>
+          <Vertices X1="0" Y1="18.46" Z1="0"/>
+          <Vertices X1="27.69" Y1="18.46" Z1="0"/>
+          <Vertices X1="22.69" Y1="13.46" Z1="0"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_3_wall_south</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="5" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="5" Y1="13.46" Z1="0"/>
+          <Vertices X1="22.69" Y1="13.46" Z1="0"/>
+          <Vertices X1="22.69" Y1="13.46" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_3_wall_west</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="0" Y1="18.46" Z1="3.05"/>
+          <Vertices X1="0" Y1="18.46" Z1="0"/>
+          <Vertices X1="5" Y1="13.46" Z1="0"/>
+          <Vertices X1="5" Y1="13.46" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_3_ceiling</SurfaceName>
+          <SurfaceType>Ceiling</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="0" Y1="18.46" Z1="3.05"/>
+          <Vertices X1="5" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="22.69" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="27.69" Y1="18.46" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_3_wall_north</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="27.69" Y1="18.46" Z1="3.05"/>
+          <Vertices X1="27.69" Y1="18.46" Z1="0"/>
+          <Vertices X1="0" Y1="18.46" Z1="0"/>
+          <Vertices X1="0" Y1="18.46" Z1="3.05"/>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_3_wall_north_Window_1</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="26.3" Y1="18.46" Z1="2.424"/>
+            <SubVertices X1="26.3" Y1="18.46" Z1="0.9"/>
+            <SubVertices X1="24.47" Y1="18.46" Z1="0.9"/>
+            <SubVertices X1="24.47" Y1="18.46" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_3_wall_north_Window_2</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="21.68" Y1="18.46" Z1="2.424"/>
+            <SubVertices X1="21.68" Y1="18.46" Z1="0.9"/>
+            <SubVertices X1="19.85" Y1="18.46" Z1="0.9"/>
+            <SubVertices X1="19.85" Y1="18.46" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_3_wall_north_Window_3</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="17.07" Y1="18.46" Z1="2.424"/>
+            <SubVertices X1="17.07" Y1="18.46" Z1="0.9"/>
+            <SubVertices X1="15.24" Y1="18.46" Z1="0.9"/>
+            <SubVertices X1="15.24" Y1="18.46" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_3_wall_north_Window_4</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="12.45" Y1="18.46" Z1="2.424"/>
+            <SubVertices X1="12.45" Y1="18.46" Z1="0.9"/>
+            <SubVertices X1="10.62" Y1="18.46" Z1="0.9"/>
+            <SubVertices X1="10.62" Y1="18.46" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_3_wall_north_Window_5</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="7.84" Y1="18.46" Z1="2.424"/>
+            <SubVertices X1="7.84" Y1="18.46" Z1="0.9"/>
+            <SubVertices X1="6.01" Y1="18.46" Z1="0.9"/>
+            <SubVertices X1="6.01" Y1="18.46" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_3_wall_north_Window_6</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="3.22" Y1="18.46" Z1="2.424"/>
+            <SubVertices X1="3.22" Y1="18.46" Z1="0.9"/>
+            <SubVertices X1="1.39" Y1="18.46" Z1="0.9"/>
+            <SubVertices X1="1.39" Y1="18.46" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_3_wall_east</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="22.69" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="22.69" Y1="13.46" Z1="0"/>
+          <Vertices X1="27.69" Y1="18.46" Z1="0"/>
+          <Vertices X1="27.69" Y1="18.46" Z1="3.05"/>
+        </CustomXYZSurfaces>
+      </CustomXYZ>
+      <InternalGains>
+        <People>
+          <PeopleDensity>5.38</PeopleDensity>
+        </People>
+        <Lights>
+          <PowerDensity>10.76</PowerDensity>
+          <FractionRadiant>0.7</FractionRadiant>
+          <FractionReturn>0</FractionReturn>
+        </Lights>
+        <Equipment>
+          <EquipmentName>MiscPlug</EquipmentName>
+          <EquipmentType>Electric</EquipmentType>
+          <PowerDensity>8.07</PowerDensity>
+          <RadiantFraction>0.5</RadiantFraction>
+          <EndUseCategory>MiscPlug</EndUseCategory>
+        </Equipment>
+      </InternalGains>
+      <Infiltration>
+        <Rate>0.62</Rate>
+        <Schedule>INFIL_QUARTER_ON_SCH</Schedule>
+      </Infiltration>
+    </Zone>
+    <Zone>
+      <Name>Perimeter_ZN_4</Name>
+      <Description>Office</Description>
+      <ZoneType>Normal</ZoneType>
+      <PrimarySpaceType>Office</PrimarySpaceType>
+      <SecondarySpaceType>Whole Building</SecondarySpaceType>
+      <CustomXYZ>
+        <NorthAxis>0</NorthAxis>
+        <XOrigin>0</XOrigin>
+        <YOrigin>0</YOrigin>
+        <ZOrigin>0</ZOrigin>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_4_floor</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="5" Y1="5" Z1="0"/>
+          <Vertices X1="0" Y1="0" Z1="0"/>
+          <Vertices X1="0" Y1="18.46" Z1="0"/>
+          <Vertices X1="5" Y1="13.46" Z1="0"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_4_wall_south</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="0" Y1="0" Z1="3.05"/>
+          <Vertices X1="0" Y1="0" Z1="0"/>
+          <Vertices X1="5" Y1="5" Z1="0"/>
+          <Vertices X1="5" Y1="5" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_4_ceiling</SurfaceName>
+          <SurfaceType>Ceiling</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="0" Y1="0" Z1="3.05"/>
+          <Vertices X1="5" Y1="5" Z1="3.05"/>
+          <Vertices X1="5" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="0" Y1="18.46" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_4_wall_north</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="5" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="5" Y1="13.46" Z1="0"/>
+          <Vertices X1="0" Y1="18.46" Z1="0"/>
+          <Vertices X1="0" Y1="18.46" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_4_wall_east</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="5" Y1="5" Z1="3.05"/>
+          <Vertices X1="5" Y1="5" Z1="0"/>
+          <Vertices X1="5" Y1="13.46" Z1="0"/>
+          <Vertices X1="5" Y1="13.46" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Perimeter_ZN_4_wall_west</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="0" Y1="18.46" Z1="3.05"/>
+          <Vertices X1="0" Y1="18.46" Z1="0"/>
+          <Vertices X1="0" Y1="0" Z1="0"/>
+          <Vertices X1="0" Y1="0" Z1="3.05"/>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_4_wall_west_Window_4</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="0" Y1="3.22" Z1="2.424"/>
+            <SubVertices X1="0" Y1="3.22" Z1="0.9"/>
+            <SubVertices X1="0" Y1="1.39" Z1="0.9"/>
+            <SubVertices X1="0" Y1="1.39" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_4_wall_west_Window_3</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="0" Y1="7.84" Z1="2.424"/>
+            <SubVertices X1="0" Y1="7.84" Z1="0.9"/>
+            <SubVertices X1="0" Y1="6.01" Z1="0.9"/>
+            <SubVertices X1="0" Y1="6.01" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_4_wall_west_Window_2</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="0" Y1="12.45" Z1="2.424"/>
+            <SubVertices X1="0" Y1="12.45" Z1="0.9"/>
+            <SubVertices X1="0" Y1="10.62" Z1="0.9"/>
+            <SubVertices X1="0" Y1="10.62" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Perimeter_ZN_4_wall_west_Window_1</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Non-Operable</SubSurfaceSpecificType>
+            <ConstructionName/>
+            <OutsideFaceEnvObject/>
+            <Multiplier>0</Multiplier>
+            <SubVertices X1="0" Y1="17.07" Z1="2.424"/>
+            <SubVertices X1="0" Y1="17.07" Z1="0.9"/>
+            <SubVertices X1="0" Y1="15.24" Z1="0.9"/>
+            <SubVertices X1="0" Y1="15.24" Z1="2.424"/>
+          </CustomXYZSubSurfaces>
+        </CustomXYZSurfaces>
+      </CustomXYZ>
+      <InternalGains>
+        <People>
+          <PeopleDensity>5.38</PeopleDensity>
+        </People>
+        <Lights>
+          <PowerDensity>10.76</PowerDensity>
+          <FractionRadiant>0.7</FractionRadiant>
+          <FractionReturn>0</FractionReturn>
+        </Lights>
+        <Equipment>
+          <EquipmentName>MiscPlug</EquipmentName>
+          <EquipmentType>Electric</EquipmentType>
+          <PowerDensity>8.07</PowerDensity>
+          <RadiantFraction>0.5</RadiantFraction>
+          <EndUseCategory>MiscPlug</EndUseCategory>
+        </Equipment>
+      </InternalGains>
+      <Infiltration>
+        <Rate>0.66</Rate>
+        <Schedule>INFIL_QUARTER_ON_SCH</Schedule>
+      </Infiltration>
+    </Zone>
+    <Zone>
+      <Name>Attic</Name>
+      <Description>Attic</Description>
+      <ZoneType>Normal</ZoneType>
+      <ExcludeInArea>true</ExcludeInArea>
+      <CustomXYZ>
+        <NorthAxis>0</NorthAxis>
+        <XOrigin>0</XOrigin>
+        <YOrigin>0</YOrigin>
+        <ZOrigin>0</ZOrigin>
+        <CustomXYZSurfaces>
+          <SurfaceName>Attic_soffit_west</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="-0.6" Y1="19.06" Z1="3.05"/>
+          <Vertices X1="0" Y1="18.46" Z1="3.05"/>
+          <Vertices X1="0" Y1="0" Z1="3.05"/>
+          <Vertices X1="-0.6" Y1="-0.6" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Attic_soffit_south</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="0" Y1="0" Z1="3.05"/>
+          <Vertices X1="27.69" Y1="0" Z1="3.05"/>
+          <Vertices X1="28.29" Y1="-0.6" Z1="3.05"/>
+          <Vertices X1="-0.6" Y1="-0.6" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Attic_soffit_east</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="28.29" Y1="19.06" Z1="3.05"/>
+          <Vertices X1="28.29" Y1="-0.6" Z1="3.05"/>
+          <Vertices X1="27.69" Y1="0" Z1="3.05"/>
+          <Vertices X1="27.69" Y1="18.46" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Attic_floor_perimeter_south</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="0" Y1="0" Z1="3.05"/>
+          <Vertices X1="5" Y1="5" Z1="3.05"/>
+          <Vertices X1="22.69" Y1="5" Z1="3.05"/>
+          <Vertices X1="27.69" Y1="0" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Attic_floor_perimeter_west</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="5" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="5" Y1="5" Z1="3.05"/>
+          <Vertices X1="0" Y1="0" Z1="3.05"/>
+          <Vertices X1="0" Y1="18.46" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Attic_floor_perimeter_east</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="22.69" Y1="5" Z1="3.05"/>
+          <Vertices X1="22.69" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="27.69" Y1="18.46" Z1="3.05"/>
+          <Vertices X1="27.69" Y1="0" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Attic_floor_core</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="5" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="22.69" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="22.69" Y1="5" Z1="3.05"/>
+          <Vertices X1="5" Y1="5" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Attic_floor_perimeter_north</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="0" Y1="18.46" Z1="3.05"/>
+          <Vertices X1="27.69" Y1="18.46" Z1="3.05"/>
+          <Vertices X1="22.69" Y1="13.46" Z1="3.05"/>
+          <Vertices X1="5" Y1="13.46" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Attic_soffit_north</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="-0.6" Y1="19.06" Z1="3.05"/>
+          <Vertices X1="28.29" Y1="19.06" Z1="3.05"/>
+          <Vertices X1="27.69" Y1="18.46" Z1="3.05"/>
+          <Vertices X1="0" Y1="18.46" Z1="3.05"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Attic_roof_north</SurfaceName>
+          <SurfaceType>Roof</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="28.29" Y1="19.06" Z1="3.05"/>
+          <Vertices X1="-0.6" Y1="19.06" Z1="3.05"/>
+          <Vertices X1="9.23" Y1="9.23" Z1="6.33"/>
+          <Vertices X1="18.46" Y1="9.23" Z1="6.33"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Attic_roof_west</SurfaceName>
+          <SurfaceType>Roof</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="-0.6" Y1="19.06" Z1="3.05"/>
+          <Vertices X1="-0.6" Y1="-0.6" Z1="3.05"/>
+          <Vertices X1="9.23" Y1="9.23" Z1="6.33"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Attic_roof_east</SurfaceName>
+          <SurfaceType>Roof</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="28.29" Y1="-0.6" Z1="3.05"/>
+          <Vertices X1="28.29" Y1="19.06" Z1="3.05"/>
+          <Vertices X1="18.46" Y1="9.23" Z1="6.33"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Attic_roof_south</SurfaceName>
+          <SurfaceType>Roof</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv/>
+          <OutsideFaceEnvObject/>
+          <SolarExposure/>
+          <WindExposure/>
+          <Vertices X1="-0.6" Y1="-0.6" Z1="3.05"/>
+          <Vertices X1="28.29" Y1="-0.6" Z1="3.05"/>
+          <Vertices X1="18.46" Y1="9.23" Z1="6.33"/>
+          <Vertices X1="9.23" Y1="9.23" Z1="6.33"/>
+        </CustomXYZSurfaces>
+      </CustomXYZ>
+      <Infiltration>
+        <Rate>1</Rate>
+        <Schedule>ALWAYS_ON</Schedule>
+      </Infiltration>
+    </Zone>
+  </Building>
+  <ScheduleSet instance="Schedule_Office_ASHRAE_90.1-1989_TypTstatSetback"/>
+  <HVACSystem>
+    <DetailedHVAC>
+      <ZoneScope>Each Zone Separate</ZoneScope>
+      <SystemScope>Building</SystemScope>
+      <ScorecardAppGType>3: PSZ-AC</ScorecardAppGType>
+      <ScorecardHeatingType>Gas Furnace</ScorecardHeatingType>
+      <ScorecardCoolingType>Direct Expansion</ScorecardCoolingType>
+      <ScorecardFanControl>Constant Volume</ScorecardFanControl>
+      <ScorecardDistributionType>Single Zone/Direct Air</ScorecardDistributionType>
+      <Zone>
+        <ZoneName>Core_ZN</ZoneName>
+        <ZoneDescription>Office</ZoneDescription>
+        <SpaceConditioning>
+          <Sizing>
+            <OAPerPerson>0.01</OAPerPerson>
+          </Sizing>
+          <Equipment>
+            <DirectAir>
+              <AirSystemName>PSZ-AC</AirSystemName>
+            </DirectAir>
+          </Equipment>
+        </SpaceConditioning>
+        <ProcessLoads>
+          <WaterSystems>
+            <Uses>
+              <PerType>EachPerHour</PerType>
+              <UseRatePer>0.011356</UseRatePer>
+              <TemperatureTarget>48.8</TemperatureTarget>
+              <ScheduleName>BLDG_SWH_SCH</ScheduleName>
+            </Uses>
+          </WaterSystems>
+        </ProcessLoads>
+      </Zone>
+      <Zone>
+        <ZoneName>Perimeter_ZN_1</ZoneName>
+        <ZoneDescription>Office</ZoneDescription>
+        <SpaceConditioning>
+          <Sizing>
+            <OAPerPerson>0.01</OAPerPerson>
+          </Sizing>
+          <Equipment>
+            <DirectAir>
+              <AirSystemName>PSZ-AC</AirSystemName>
+            </DirectAir>
+          </Equipment>
+        </SpaceConditioning>
+      </Zone>
+      <Zone>
+        <ZoneName>Perimeter_ZN_2</ZoneName>
+        <ZoneDescription>Office</ZoneDescription>
+        <SpaceConditioning>
+          <Sizing>
+            <OAPerPerson>0.01</OAPerPerson>
+          </Sizing>
+          <Equipment>
+            <DirectAir>
+              <AirSystemName>PSZ-AC</AirSystemName>
+            </DirectAir>
+          </Equipment>
+        </SpaceConditioning>
+      </Zone>
+      <Zone>
+        <ZoneName>Perimeter_ZN_3</ZoneName>
+        <ZoneDescription>Office</ZoneDescription>
+        <SpaceConditioning>
+          <Sizing>
+            <OAPerPerson>0.01</OAPerPerson>
+          </Sizing>
+          <Equipment>
+            <DirectAir>
+              <AirSystemName>PSZ-AC</AirSystemName>
+            </DirectAir>
+          </Equipment>
+        </SpaceConditioning>
+      </Zone>
+      <Zone>
+        <ZoneName>Perimeter_ZN_4</ZoneName>
+        <ZoneDescription>Office</ZoneDescription>
+        <SpaceConditioning>
+          <Sizing>
+            <OAPerPerson>0.01</OAPerPerson>
+          </Sizing>
+          <Equipment>
+            <DirectAir>
+              <AirSystemName>PSZ-AC</AirSystemName>
+            </DirectAir>
+          </Equipment>
+        </SpaceConditioning>
+      </Zone>
+      <Systems>
+        <HVACSystems>
+          <AirSystem>
+            <DistributionType>SingleZone</DistributionType>
+            <Name>PSZ-AC</Name>
+            <StdCoolingTable>Unitary Air Conditioners</StdCoolingTable>
+            <StdCoolingEquipType>Air Conditioners</StdCoolingEquipType>
+            <StdCoolingCondenserType>Air Cooled</StdCoolingCondenserType>
+            <StdCoolingSubCategory>Single Package</StdCoolingSubCategory>
+            <StdHeatingTable>Warm Air Furnaces</StdHeatingTable>
+            <StdHeatingFuelType>Gas</StdHeatingFuelType>
+            <UseNightCycle>true</UseNightCycle>
+            <SATManagerType>Scheduled</SATManagerType>
+            <Sizing/>
+            <Equipment>
+              <OutsideAirSystem>
+                <UseEconomizer>false</UseEconomizer>
+                <MotorizedDamper>false</MotorizedDamper>
+              </OutsideAirSystem>
+              <Coil>
+                <Type>Cooling</Type>
+                <Fuel>Electricity</Fuel>
+                <COP>3.1416</COP>
+              </Coil>
+              <Coil>
+                <Type>Heating</Type>
+                <Fuel>Gas</Fuel>
+                <Efficiency>0.99</Efficiency>
+              </Coil>
+              <Fan>
+                <Type>Constant</Type>
+                <Efficiency>0.254</Efficiency>
+                <MotorEfficiency>0.875</MotorEfficiency>
+                <PressureDrop>330</PressureDrop>
+              </Fan>
+            </Equipment>
+          </AirSystem>
+          <LiquidSystemHotWater>
+            <SWHTargetTemp>60</SWHTargetTemp>
+            <Equipment>
+              <Pump>
+                <Type>Constant</Type>
+                <Efficiency>1</Efficiency>
+                <Head>0.001</Head>
+              </Pump>
+              <WaterHeater>
+                <Type>Storage Tank</Type>
+                <Fuel>NaturalGas</Fuel>
+                <Efficiency>0.8</Efficiency>
+                <Volume>0.1514</Volume>
+                <Capacity>845000</Capacity>
+                <EffectiveUValue>0</EffectiveUValue>
+                <HeightAspectRatio>0</HeightAspectRatio>
+                <NumberNodes>0</NumberNodes>
+              </WaterHeater>
+            </Equipment>
+          </LiquidSystemHotWater>
+        </HVACSystems>
+      </Systems>
+    </DetailedHVAC>
+  </HVACSystem>
+  <ExteriorLoads>
+    <ExteriorFacadeLights instance="16.404"/>
+  </ExteriorLoads>
+  <MacroControl path="./include" ReportVarSetKey="BasicReportsAndABUPS_Benchmark"/>
+</HPBParametization>

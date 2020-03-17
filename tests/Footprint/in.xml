@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Written by HPBxmlManager procedure by NREL-->
+<HPBParametization xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\..\schema\HPBxml.xsd">
+  <HPBXmlSettings>
+    <HPBXmlVersion>0.1.2.4</HPBXmlVersion>
+  </HPBXmlSettings>
+  <OptEPlusMetadata>
+    <OptEPlusVersion>0.1.2.7</OptEPlusVersion>
+    <OptEPlusDatabase>C:\AEDG\med_retail\plug1.opt</OptEPlusDatabase>
+  </OptEPlusMetadata>
+  <SimSettings>
+    <TimeStepInHour>1</TimeStepInHour>
+    <MaxNumWarmupDays>25</MaxNumWarmupDays>
+    <LoadConvergeTolerance>0.04</LoadConvergeTolerance>
+    <TempConvergeTolerance>0.2</TempConvergeTolerance>
+    <UpdateShadowInterval>30</UpdateShadowInterval>
+    <BaseCase>true</BaseCase>
+    <RunWeatherFile>true</RunWeatherFile>
+    <MaxHVACIterations>25</MaxHVACIterations>
+    <MinSystemTimeStep>25</MinSystemTimeStep>
+    <EnergyPlusVersion>8.0</EnergyPlusVersion>
+  </SimSettings>
+  <SiteParams>
+    <WeatherFile filename="USA_IL_Chicago-OHare_TMY2.epw"/>
+    <DesignDays instance="USA_IL_CHICAGO-OHARE"/>
+    <UtilityCosts instance="PSI_CommRates"/>
+    <PrimarySpaceType>Office</PrimarySpaceType>
+    <SecondarySpaceType>Whole Building</SecondarySpaceType>
+    <ClimateZones>
+      <ClimateZone>5A</ClimateZone>
+    </ClimateZones>
+    <SiteMetaData SiteStatsIndex="0" WeightFactor="0" BldgID="0" CensusDivision="0" CensusRegion="0" PrincipleBuildingActivity="2" MoreDetailedActivity="0"/>
+  </SiteParams>
+  <SpecificConstructs StaticObjectsFile="HPBStandardConstructions.imf">
+    <FenestrationSystem>
+      <south>
+        <ConstructionName instance="ASHRAE 90.1-1999_Table B-17_0.4_1_fixed_south_window"/>
+        <WindowGlass MaterialName="Theoretical Glass [27]" Thickness="0.003" SolarTrans="0.409762" SolarReflectFront="0.540238" SolarReflectBack="0.540238" VisibleTrans="0.43294" VisibleReflectFront="0.51706" VisibleReflectBack="0.51706" IRTrans="0" IREmmFront="0.9" IREmmBack="0.9" Conductivity="0.0735458"/>
+        <WindowGas MaterialName="AIR 6MM" GasType="Air" Thickness="0.0063"/>
+        <WindowGlass MaterialName="Theoretical Glass [27]" Thickness="0.003" SolarTrans="0.409762" SolarReflectFront="0.540238" SolarReflectBack="0.540238" VisibleTrans="0.43294" VisibleReflectFront="0.51706" VisibleReflectBack="0.51706" IRTrans="0" IREmmFront="0.9" IREmmBack="0.9" Conductivity="0.0735458"/>
+      </south>
+      <east>
+        <ConstructionName instance="ASHRAE 90.1-1999_Table B-17_0.4_1_fixed_east_window"/>
+        <WindowGlass MaterialName="Theoretical Glass [27]" Thickness="0.003" SolarTrans="0.409762" SolarReflectFront="0.540238" SolarReflectBack="0.540238" VisibleTrans="0.43294" VisibleReflectFront="0.51706" VisibleReflectBack="0.51706" IRTrans="0" IREmmFront="0.9" IREmmBack="0.9" Conductivity="0.0735458"/>
+        <WindowGas MaterialName="AIR 6MM" GasType="Air" Thickness="0.0063"/>
+        <WindowGlass MaterialName="Theoretical Glass [27]" Thickness="0.003" SolarTrans="0.409762" SolarReflectFront="0.540238" SolarReflectBack="0.540238" VisibleTrans="0.43294" VisibleReflectFront="0.51706" VisibleReflectBack="0.51706" IRTrans="0" IREmmFront="0.9" IREmmBack="0.9" Conductivity="0.0735458"/>
+      </east>
+      <north>
+        <ConstructionName instance="ASHRAE 90.1-1999_Table B-17_0.4_1_fixed_north_window"/>
+        <WindowGlass MaterialName="Theoretical Glass [39]" Thickness="0.003" SolarTrans="0.523685" SolarReflectFront="0.426315" SolarReflectBack="0.426315" VisibleTrans="0.564895" VisibleReflectFront="0.385105" VisibleReflectBack="0.385105" IRTrans="0" IREmmFront="0.9" IREmmBack="0.9" Conductivity="0.0735458"/>
+        <WindowGas MaterialName="AIR 6MM" GasType="Air" Thickness="0.0063"/>
+        <WindowGlass MaterialName="Theoretical Glass [39]" Thickness="0.003" SolarTrans="0.523685" SolarReflectFront="0.426315" SolarReflectBack="0.426315" VisibleTrans="0.564895" VisibleReflectFront="0.385105" VisibleReflectBack="0.385105" IRTrans="0" IREmmFront="0.9" IREmmBack="0.9" Conductivity="0.0735458"/>
+      </north>
+      <west>
+        <ConstructionName instance="ASHRAE 90.1-1999_Table B-17_0.4_1_fixed_west_window"/>
+        <WindowGlass MaterialName="Theoretical Glass [27]" Thickness="0.003" SolarTrans="0.409762" SolarReflectFront="0.540238" SolarReflectBack="0.540238" VisibleTrans="0.43294" VisibleReflectFront="0.51706" VisibleReflectBack="0.51706" IRTrans="0" IREmmFront="0.9" IREmmBack="0.9" Conductivity="0.0735458"/>
+        <WindowGas MaterialName="AIR 6MM" GasType="Air" Thickness="0.0063"/>
+        <WindowGlass MaterialName="Theoretical Glass [27]" Thickness="0.003" SolarTrans="0.409762" SolarReflectFront="0.540238" SolarReflectBack="0.540238" VisibleTrans="0.43294" VisibleReflectFront="0.51706" VisibleReflectBack="0.51706" IRTrans="0" IREmmFront="0.9" IREmmBack="0.9" Conductivity="0.0735458"/>
+      </west>
+      <SkylightConst>
+        <ConstructionName instance="ASHRAE 90.1-1999_Table B-17_0.02_1_All Skylights without Curb_Skylight"/>
+        <WindowGlass MaterialName="Theoretical Glass [28]" Thickness="0.003" SolarTrans="0.383" SolarReflectFront="0.567" SolarReflectBack="0.567" VisibleTrans="0.41104" VisibleReflectFront="0.53896" VisibleReflectBack="0.53896" IRTrans="0" IREmmFront="0.92" IREmmBack="0.92" Conductivity="0.0298074"/>
+      </SkylightConst>
+    </FenestrationSystem>
+    <DaylightFenestrationSystem/>
+    <OpaqueConstructs>
+      <roofs>
+        <ConstructionName instance="ASHRAE 90.1-1999_Table B-17_IEAD_Roof"/>
+        <Material MaterialName="Roof Membrane" Roughness="VeryRough" Thickness="0.0095" Conductivity="0.16" Density="1121.29" SpecificHeat="1460" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="Roof Insulation" Roughness="MediumRough" Thickness="0.124958" Conductivity="0.049" Density="265" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="Metal Decking" Roughness="MediumSmooth" Thickness="0.001524" Conductivity="45.006" Density="7680" SpecificHeat="418.4" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.3"/>
+      </roofs>
+      <int-walls>
+        <ConstructionName instance="ASHRAE 90.1-1999_Table B-17_Interior Wall_Int-Wall"/>
+        <Material MaterialName="GP01 1/2 GYPSUM" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="800" SpecificHeat="1090" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.5"/>
+        <Material MaterialName="GP01 1/2 GYPSUM" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="800" SpecificHeat="1090" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.5"/>
+      </int-walls>
+      <ext-walls>
+        <ConstructionName instance="ASHRAE 90.1-1999_Table B-17_Steel-Framed_Ext-wall"/>
+        <Material-R MaterialName="MAT-SHEATH" Roughness="Rough" ThermalResistance="0.36256" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="Wall Insulation [8]" Roughness="MediumRough" Thickness="0.0682941" Conductivity="0.045" Density="265" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="1/2IN Gypsum" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="784.9" SpecificHeat="830" AbsorThermal="0.9" AbsorSolar="0.92" AbsorVis="0.92"/>
+      </ext-walls>
+      <ext-slab>
+        <ConstructionName instance="ASHRAE 90.1-1999_Table B-17_Unheated_Ext-slab"/>
+        <Material MaterialName="MAT-CC05 8 HW CONCRETE" Roughness="Rough" Thickness="0.20321" Conductivity="1.311" Density="2240" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material-R MaterialName="CP02 CARPET PAD" Roughness="VeryRough" ThermalResistance="0.21648" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.8"/>
+      </ext-slab>
+    </OpaqueConstructs>
+  </SpecificConstructs>
+  <Building>
+    <Name>Whatever</Name>
+    <Area>2000</Area>
+    <NumFloors>3</NumFloors>
+    <PerimDepth>10</PerimDepth>
+    <FloortoFloorHeight>3.8</FloortoFloorHeight>
+    <PlenumHeight>0.9</PlenumHeight>
+    <Rotation>0</Rotation>
+    <Footprint>true</Footprint>
+    <Floor>
+      <FootprintType>Custom</FootprintType>
+      <Custom>
+        <Point X1="0" Y1="0"/>
+        <Point X1="10" Y1="0"/>
+        <Point X1="15" Y1="15"/>
+        <Point X1="10" Y1="25"/>
+        <Point X1="0" Y1="30"/>
+        <Point X1="-10" Y1="25"/>
+        <Point X1="-15" Y1="15"/>
+        <Point X1="-10" Y1="5"/>
+      </Custom>
+    </Floor>
+    <Zone>
+      <Name>All</Name>
+      <ZoneType>Normal</ZoneType>
+      <PrimarySpaceType>Office</PrimarySpaceType>
+      <SecondarySpaceType>Whole Building</SecondarySpaceType>
+      <Ceiling>
+        <TubularDaylightingDevices>
+          <InstallConfiguration>All Top Zones</InstallConfiguration>
+          <AreaPerTDD>18</AreaPerTDD>
+        </TubularDaylightingDevices>
+      </Ceiling>
+      <Surfaces>
+        <SurfaceNormal>South</SurfaceNormal>
+        <Fenestration>
+          <AreaFraction>0.2</AreaFraction>
+          <SillHeight>1.1</SillHeight>
+          <EdgeOffset>1</EdgeOffset>
+          <Type>Banded</Type>
+          <Overhang>
+            <Depth>2</Depth>
+            <Offset>0.5</Offset>
+          </Overhang>
+          <Fin>
+            <Depth>2</Depth>
+            <Offset>0.5</Offset>
+          </Fin>
+        </Fenestration>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>East</SurfaceNormal>
+        <Fenestration>
+          <AreaFraction>0.2</AreaFraction>
+          <SillHeight>1.1</SillHeight>
+          <EdgeOffset>1</EdgeOffset>
+          <Type>Banded</Type>
+          <Overhang>
+            <Depth>2</Depth>
+            <Offset>0.5</Offset>
+          </Overhang>
+          <Fin>
+            <Depth>2</Depth>
+            <Offset>0.5</Offset>
+          </Fin>
+        </Fenestration>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>North</SurfaceNormal>
+        <Fenestration>
+          <AreaFraction>0.2</AreaFraction>
+          <SillHeight>1.1</SillHeight>
+          <EdgeOffset>1</EdgeOffset>
+          <Type>Banded</Type>
+          <Overhang>
+            <Depth>2</Depth>
+            <Offset>0.5</Offset>
+          </Overhang>
+          <Fin>
+            <Depth>2</Depth>
+            <Offset>0.5</Offset>
+          </Fin>
+        </Fenestration>
+      </Surfaces>
+      <Surfaces>
+        <SurfaceNormal>West</SurfaceNormal>
+        <Fenestration>
+          <AreaFraction>0.2</AreaFraction>
+          <SillHeight>1.1</SillHeight>
+          <EdgeOffset>1</EdgeOffset>
+          <Type>Banded</Type>
+          <Overhang>
+            <Depth>2</Depth>
+            <Offset>0.5</Offset>
+          </Overhang>
+          <Fin>
+            <Depth>2</Depth>
+            <Offset>0.5</Offset>
+          </Fin>
+        </Fenestration>
+      </Surfaces>
+      <InternalGains>
+        <People>
+          <PeopleDensity>9</PeopleDensity>
+        </People>
+        <Lights>
+          <PowerDensity>14</PowerDensity>
+          <FractionRadiant>0.37</FractionRadiant>
+          <FractionReturn>0.2</FractionReturn>
+        </Lights>
+        <Equipment>
+          <EquipmentName>PlugMisc</EquipmentName>
+          <EquipmentType>Electric</EquipmentType>
+          <PowerDensity>8.07</PowerDensity>
+          <RadiantFraction>0.5</RadiantFraction>
+        </Equipment>
+      </InternalGains>
+      <Daylighting>
+        <ControlType>Stepped</ControlType>
+        <Setpoint>200</Setpoint>
+        <NumberOfSensors>2</NumberOfSensors>
+        <MinimumInputPowerFraction>0.3</MinimumInputPowerFraction>
+        <MinimumLightOutputFraction>0.2</MinimumLightOutputFraction>
+      </Daylighting>
+      <Infiltration>
+        <Rate>0.45</Rate>
+      </Infiltration>
+    </Zone>
+  </Building>
+  <ScheduleSet instance="Schedule_Office_ASHRAE_90.1-1989_TypTstatSetback"/>
+  <HVACSystem Economizer="false" ERV="false" ElectricHeat="false" BaseType="PSZ" CostPer="450" InstallCost="47" FixedOM="4" VariableOM="33" ExpectedLife="15" SalvageCost="1" CostUnits="$/kW">
+    <DetailedHVAC>
+      <ZoneScope>Uniform Zones From Configuration</ZoneScope>
+      <SystemScope>Building</SystemScope>
+      <Zone>
+        <ZoneName>All</ZoneName>
+        <TypicalHoursPerDay>10</TypicalHoursPerDay>
+        <SpaceConditioning>
+          <Sizing/>
+          <Equipment>
+            <DirectAir>
+              <AirSystemName>PSZ-AC</AirSystemName>
+            </DirectAir>
+          </Equipment>
+        </SpaceConditioning>
+      </Zone>
+      <Systems>
+        <HVACSystems>
+          <AirSystem>
+            <DistributionType>SingleZone</DistributionType>
+            <Name>PSZ-AC</Name>
+            <UseNightCycle>false</UseNightCycle>
+            <SATManagerType>Scheduled</SATManagerType>
+            <Equipment>
+              <OutsideAirSystem>
+                <UseEconomizer>false</UseEconomizer>
+                <MotorizedDamper>false</MotorizedDamper>
+              </OutsideAirSystem>
+              <Coil>
+                <Type>Cooling</Type>
+                <Fuel>Electricity</Fuel>
+                <COP>3.0472</COP>
+              </Coil>
+              <Coil>
+                <Type>Heating</Type>
+                <Fuel>Gas</Fuel>
+                <Efficiency>0.8</Efficiency>
+              </Coil>
+              <Fan>
+                <Type>Constant</Type>
+                <Efficiency>0.65</Efficiency>
+                <PressureDrop>500</PressureDrop>
+              </Fan>
+            </Equipment>
+          </AirSystem>
+        </HVACSystems>
+      </Systems>
+    </DetailedHVAC>
+  </HVACSystem>
+  <MacroControl path="./include" ReportVarSetKey="BasicReportsAndAPUBS_BEOpt"/>
+  <CodeStandardSettings>
+    <RoofConstruction>Insulation Entirely Above Deck</RoofConstruction>
+    <ExtWallConstruction>Steel-Framed</ExtWallConstruction>
+    <ExtSlabConstruction>Unheated - 8in Slab with Carpet</ExtSlabConstruction>
+    <WholeBuildingMethod>false</WholeBuildingMethod>
+  </CodeStandardSettings>
+</HPBParametization>

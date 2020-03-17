@@ -1,0 +1,129 @@
+!***** This data and software ("Data") is provided by the National Renewable *****
+!***** Energy Laboratory ("NREL"), which is operated by the Alliance for *****
+!***** Sustainable Energy, LLC ("ALLIANCE") for the U.S. Department Of *****
+!***** Energy ("DOE"). *****
+
+!***** Access to and use of these Data shall impose the following obligations *****
+!***** on the user, as set forth in this Agreement.  The user is granted the *****
+!***** right, without any fee or cost, to use, copy, modify, alter, enhance *****
+!***** and distribute these Data for any purpose whatsoever, provided that this *****
+!***** entire notice appears in all copies of the Data.  Further, the user *****
+!***** agrees to credit DOE/NREL/ALLIANCE in any publication that results from *****
+!***** the use of these Data.  The names DOE/NREL/ALLIANCE, however, may not *****
+!***** be used in any advertising or publicity to endorse or promote any products *****
+!***** or commercial entities unless specific written permission is obtained from *****
+!***** DOE/NREL/ ALLIANCE.  The user also understands that DOE/NREL/Alliance is *****
+!***** not obligated to provide the user with any support, consulting, training *****
+!***** or assistance of any kind with regard to the use of these Data or to *****
+!***** provide the user with any updates, revisions or new versions of these Data. *****
+
+!***** YOU AGREE TO INDEMNIFY DOE/NREL/Alliance, AND ITS SUBSIDIARIES, AFFILIATES, *****
+!***** OFFICERS, AGENTS, AND EMPLOYEES AGAINST ANY CLAIM OR DEMAND, INCLUDING *****
+!***** 'REASONABLE ATTORNEYS' FEES, RELATED TO YOUR USE OF THESE DATA.  THESE DATA *****
+!***** ARE PROVIDED BY DOE/NREL/Alliance "AS IS" AND ANY EXPRESS OR IMPLIED *****
+!***** WARRANTIES, INCLUDING BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF *****
+!***** MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN *****
+!***** NO EVENT SHALL DOE/NREL/ALLIANCE BE LIABLE FOR ANY SPECIAL, INDIRECT OR *****
+!***** CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER, INCLUDING BUT NOT LIMITED *****
+!***** TO CLAIMS ASSOCIATED WITH THE LOSS OF DATA OR PROFITS, WHICH MAY RESULT *****
+!***** FROM AN ACTION IN CONTRACT, NEGLIGENCE OR OTHER TORTIOUS CLAIM THAT *****
+!***** ARISES OUT OF OR IN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF *****
+!***** THESE DATA. *****
+
+##def DefaultUnitaryPackageHeatPump[]
+
+
+Curve:Cubic,
+  #{CapFuncTempCurve},  !- Name 
+  0.758746,  !- Coefficient1 Constant 
+  0.027626,  !- Coefficient2 x 
+  0.000148716,  !- Coefficient3 x**2 
+  0.0000034992,  !- Coefficient4 x**3 
+  -20.0,  !- Minimum Value of x 
+  20.0;  !- Maximum Value of x 
+
+Curve:Cubic,
+  #{CapFuncFlowFracCurve},  !- Name 
+  0.84,  !- Coefficient1 Constant 
+  0.16,  !- Coefficient2 x 
+  0.0,  !- Coefficient3 x**2 
+  0.0,  !- Coefficient4 x**3 
+  0.5,  !- Minimum Value of x 
+  1.5;  !- Maximum Value of x 
+
+Curve:Cubic,
+  #{EirFuncTempCurve},  !- Name 
+  1.19248,  !- Coefficient1 Constant 
+  -0.0300438,  !- Coefficient2 x 
+  0.00103745,  !- Coefficient3 x**2 
+  -0.000023328,  !- Coefficient4 x**3 
+  -20.0,  !- Minimum Value of x 
+  20.0;  !- Maximum Value of x 
+
+Curve:Quadratic,
+  #{EirFuncFlowFracCurve},  !- Name 
+  1.3824,  !- Coefficient1 Constant 
+  -0.4336,  !- Coefficient2 x 
+  0.0512,  !- Coefficient3 x**2 
+  0.0,  !- Minimum Value of x 
+  1.0;  !- Maximum Value of x 
+
+Curve:Quadratic,
+  #{PlrCurve},  !- Name 
+  0.75,  !- Coefficient1 Constant 
+  0.25,  !- Coefficient2 x 
+  0.0,  !- Coefficient3 x**2 
+  0.0,  !- Minimum Value of x 
+  1.0;  !- Maximum Value of x 
+
+
+##enddef
+
+##def DefaultPTHP[]
+
+
+Curve:Cubic,
+  #{CapFuncTempCurve},  !- Name 
+  0.758746,  !- Coeff 1 constant 
+  0.027626,  !- coeff 2 x 
+  0.000148716,  !- coeff 3 x**2 
+  0.0000034992,  !- coeff 4 x**3 
+  -20.0,  !- min value of x 
+  20.0;  !- max value of x 
+
+Curve:Cubic,
+  #{CapFuncFlowFracCurve},  !- Name 
+  0.84,  !- Coeff 1 constant 
+  0.16,  !- coeff 2 x 
+  0.0,  !- coeff 3 x**2 
+  0.0,  !- coeff 4 x**3 
+  0.5,  !- min value of x 
+  1.5;  !- max value of x 
+
+Curve:Cubic,
+  #{EirFuncTempCurve},  !- Name 
+  1.19248,  !- Coeff 1 constant 
+  -0.0300438,  !- coeff 2 x 
+  0.00103745,  !- coeff 3 x**2 
+  -0.000023328,  !- coeff 4 x**3 
+  -20.0,  !- min value of x 
+  20.0;  !- max value of x 
+
+Curve:Quadratic,
+  #{EirFuncFlowFracCurve},  !- Name 
+  1.3824,  !- Coeff 1 constant 
+  -0.4336,  !- coeff 2 x 
+  0.0512,  !- coeff 3 x**2 
+  0.0,  !- min value of x 
+  1.0;  !- max value of x 
+
+Curve:Quadratic,
+  #{PlrCurve},  !- Name 
+  0.75,  !- Coeff 1 constant 
+  0.25,  !- coeff 2 x 
+  0.0,  !- coeff 3 x**2 
+  0.0,  !- min value of x 
+  1.0;  !- max value of x 
+
+
+##enddef

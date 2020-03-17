@@ -1,0 +1,250 @@
+!***** This data and software ("Data") is provided by the National Renewable *****
+!***** Energy Laboratory ("NREL"), which is operated by the Alliance for *****
+!***** Sustainable Energy, LLC ("ALLIANCE") for the U.S. Department Of *****
+!***** Energy ("DOE"). *****
+
+!***** Access to and use of these Data shall impose the following obligations *****
+!***** on the user, as set forth in this Agreement.  The user is granted the *****
+!***** right, without any fee or cost, to use, copy, modify, alter, enhance *****
+!***** and distribute these Data for any purpose whatsoever, provided that this *****
+!***** entire notice appears in all copies of the Data.  Further, the user *****
+!***** agrees to credit DOE/NREL/ALLIANCE in any publication that results from *****
+!***** the use of these Data.  The names DOE/NREL/ALLIANCE, however, may not *****
+!***** be used in any advertising or publicity to endorse or promote any products *****
+!***** or commercial entities unless specific written permission is obtained from *****
+!***** DOE/NREL/ ALLIANCE.  The user also understands that DOE/NREL/Alliance is *****
+!***** not obligated to provide the user with any support, consulting, training *****
+!***** or assistance of any kind with regard to the use of these Data or to *****
+!***** provide the user with any updates, revisions or new versions of these Data. *****
+
+!***** YOU AGREE TO INDEMNIFY DOE/NREL/Alliance, AND ITS SUBSIDIARIES, AFFILIATES, *****
+!***** OFFICERS, AGENTS, AND EMPLOYEES AGAINST ANY CLAIM OR DEMAND, INCLUDING *****
+!***** 'REASONABLE ATTORNEYS' FEES, RELATED TO YOUR USE OF THESE DATA.  THESE DATA *****
+!***** ARE PROVIDED BY DOE/NREL/Alliance "AS IS" AND ANY EXPRESS OR IMPLIED *****
+!***** WARRANTIES, INCLUDING BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF *****
+!***** MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN *****
+!***** NO EVENT SHALL DOE/NREL/ALLIANCE BE LIABLE FOR ANY SPECIAL, INDIRECT OR *****
+!***** CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER, INCLUDING BUT NOT LIMITED *****
+!***** TO CLAIMS ASSOCIATED WITH THE LOSS OF DATA OR PROFITS, WHICH MAY RESULT *****
+!***** FROM AN ACTION IN CONTRACT, NEGLIGENCE OR OTHER TORTIOUS CLAIM THAT *****
+!***** ARISES OUT OF OR IN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF *****
+!***** THESE DATA. *****
+
+##def Header_Info[]
+ ! Climate_1[]
+##enddef
+
+##def Climate_1[]
+ 
+WindowMaterial:Glazing,
+  Theoretical Glass [6],   !- Name
+  SpectralAverage,         !- Optical Data Type
+  ,                        !- Window Glass Spectral Data Set Name
+  0.0030,                  !- Thickness {m}
+  0.2387,                  !- Solar Transmittance at Normal Incidence
+  0.7113,                  !- Front Side Solar Reflectance at Normal Incidence
+  0.7113,                  !- Back Side Solar Reflectance at Normal Incidence
+  0.2467,                  !- Visible Transmittance at Normal Incidence
+  0.7033,                  !- Front Side Visible Reflectance at Normal Incidence
+  0.7033,                  !- Back Side Visible Reflectance at Normal Incidence
+  0.0000,                  !- Infrared Transmittance at Normal Incidence
+  0.9990,                  !- Front Side Infrared Hemispherical Emissivity
+  0.9990,                  !- Back Side Infrared Hemispherical Emissivity
+  101.4580;                !- Conductivity {W/m-K}
+ 
+WindowMaterial:Glazing,
+  Theoretical Glass [1],   !- Name
+  SpectralAverage,         !- Optical Data Type
+  ,                        !- Window Glass Spectral Data Set Name
+  0.0030,                  !- Thickness {m}
+  0.5945,                  !- Solar Transmittance at Normal Incidence
+  0.3555,                  !- Front Side Solar Reflectance at Normal Incidence
+  0.3555,                  !- Back Side Solar Reflectance at Normal Incidence
+  0.6684,                  !- Visible Transmittance at Normal Incidence
+  0.2816,                  !- Front Side Visible Reflectance at Normal Incidence
+  0.2816,                  !- Back Side Visible Reflectance at Normal Incidence
+  0.0000,                  !- Infrared Transmittance at Normal Incidence
+  0.9990,                  !- Front Side Infrared Hemispherical Emissivity
+  0.9990,                  !- Back Side Infrared Hemispherical Emissivity
+  101.9480;                !- Conductivity {W/m-K}
+ 
+WindowMaterial:Glazing,
+  Theoretical Glass [5],   !- Name
+  SpectralAverage,         !- Optical Data Type
+  ,                        !- Window Glass Spectral Data Set Name
+  0.0030,                  !- Thickness {m}
+  0.1790,                  !- Solar Transmittance at Normal Incidence
+  0.7710,                  !- Front Side Solar Reflectance at Normal Incidence
+  0.7710,                  !- Back Side Solar Reflectance at Normal Incidence
+  0.1761,                  !- Visible Transmittance at Normal Incidence
+  0.7739,                  !- Front Side Visible Reflectance at Normal Incidence
+  0.7739,                  !- Back Side Visible Reflectance at Normal Incidence
+  0.0000,                  !- Infrared Transmittance at Normal Incidence
+  0.9990,                  !- Front Side Infrared Hemispherical Emissivity
+  0.9990,                  !- Back Side Infrared Hemispherical Emissivity
+  2.2444;                  !- Conductivity {W/m-K}
+ 
+Material,
+  Roof Membrane,           !- Name
+  VeryRough,               !- Roughness
+  0.0095,                  !- Thickness {m}
+  0.1600,                  !- Conductivity {W/m-K}
+  1121.2900,               !- Density {kg/m3}
+  1460.0000,               !- Specific Heat {J/kg-K}
+  0.9000,                  !- Thermal Absorptance
+  0.7000,                  !- Solar Absorptance
+  0.7000;                  !- Visible Absorptance
+ 
+Material,
+  Roof Insulation,         !- Name
+  MediumRough,             !- Roughness
+  0.1250,                  !- Thickness {m}
+  0.0490,                  !- Conductivity {W/m-K}
+  265.0000,                !- Density {kg/m3}
+  836.8000,                !- Specific Heat {J/kg-K}
+  0.9000,                  !- Thermal Absorptance
+  0.7000,                  !- Solar Absorptance
+  0.7000;                  !- Visible Absorptance
+ 
+Material,
+  Metal Decking,           !- Name
+  MediumSmooth,            !- Roughness
+  0.0015,                  !- Thickness {m}
+  45.0060,                 !- Conductivity {W/m-K}
+  7680.0000,               !- Density {kg/m3}
+  418.4000,                !- Specific Heat {J/kg-K}
+  0.9000,                  !- Thermal Absorptance
+  0.7000,                  !- Solar Absorptance
+  0.3000;                  !- Visible Absorptance
+ 
+Material,
+  GP01 1/2 GYPSUM,         !- Name
+  Smooth,                  !- Roughness
+  0.0127,                  !- Thickness {m}
+  0.1600,                  !- Conductivity {W/m-K}
+  800.0000,                !- Density {kg/m3}
+  1090.0000,               !- Specific Heat {J/kg-K}
+  0.9000,                  !- Thermal Absorptance
+  0.7000,                  !- Solar Absorptance
+  0.5000;                  !- Visible Absorptance
+ 
+Material:NoMass,
+  MAT-SHEATH,              !- Name
+  Rough,                   !- Roughness
+  0.3626,                  !- Thermal Resistance {m2-K/W}
+  0.9000,                  !- Thermal Absorptance
+  0.7000,                  !- Solar Absorptance
+  0.7000;                  !- Visible Absorptance
+ 
+Material,
+  Wall Insulation [2],     !- Name
+  MediumRough,             !- Roughness
+  0.0376,                  !- Thickness {m}
+  0.0450,                  !- Conductivity {W/m-K}
+  265.0000,                !- Density {kg/m3}
+  836.8000,                !- Specific Heat {J/kg-K}
+  0.9000,                  !- Thermal Absorptance
+  0.7000,                  !- Solar Absorptance
+  0.7000;                  !- Visible Absorptance
+ 
+Material,
+  1/2IN Gypsum,            !- Name
+  Smooth,                  !- Roughness
+  0.0127,                  !- Thickness {m}
+  0.1600,                  !- Conductivity {W/m-K}
+  784.9000,                !- Density {kg/m3}
+  830.0000,                !- Specific Heat {J/kg-K}
+  0.9000,                  !- Thermal Absorptance
+  0.9200,                  !- Solar Absorptance
+  0.9200;                  !- Visible Absorptance
+ 
+Material,
+  MAT-CC05 8 HW CONCRETE,  !- Name
+  Rough,                   !- Roughness
+  0.2032,                  !- Thickness {m}
+  1.3110,                  !- Conductivity {W/m-K}
+  2240.0000,               !- Density {kg/m3}
+  836.8000,                !- Specific Heat {J/kg-K}
+  0.9000,                  !- Thermal Absorptance
+  0.7000,                  !- Solar Absorptance
+  0.7000;                  !- Visible Absorptance
+ 
+Material:NoMass,
+  CP02 CARPET PAD,         !- Name
+  VeryRough,               !- Roughness
+  0.2165,                  !- Thermal Resistance {m2-K/W}
+  0.9000,                  !- Thermal Absorptance
+  0.7000,                  !- Solar Absorptance
+  0.8000;                  !- Visible Absorptance
+ 
+Construction,
+  window_south,            !- Name
+  Theoretical Glass [6];   !- Outside Layer
+ 
+Construction,
+  window_east,             !- Name
+  Theoretical Glass [6];   !- Outside Layer
+ 
+Construction,
+  window_north,            !- Name
+  Theoretical Glass [1];   !- Outside Layer
+ 
+Construction,
+  window_west,             !- Name
+  Theoretical Glass [6];   !- Outside Layer
+ 
+Construction,
+  window_skylightconst,    !- Name
+  Theoretical Glass [5];   !- Outside Layer
+ 
+Construction,
+  roofs,                   !- Name
+  Roof Membrane,           !- Outside Layer
+  Roof Insulation,         !- Layer 2
+  Metal Decking;           !- Layer 3
+ 
+Construction,
+  int-walls,               !- Name
+  GP01 1/2 GYPSUM,         !- Outside Layer
+  GP01 1/2 GYPSUM;         !- Layer 2
+ 
+Construction,
+  ext-walls,               !- Name
+  MAT-SHEATH,              !- Outside Layer
+  Wall Insulation [2],     !- Layer 2
+  1/2IN Gypsum;            !- Layer 3
+ 
+Construction,
+  ext-slab,                !- Name
+  MAT-CC05 8 HW CONCRETE,  !- Outside Layer
+  CP02 CARPET PAD;         !- Layer 2
+ 
+Material,
+  Roof_Attic_Insulation,   !- Name
+  MediumRough,             !- Roughness
+  0.2806,                  !- Thickness {m}
+  0.0450,                  !- Conductivity {W/m-K}
+  265.0000,                !- Density {kg/m3}
+  836.8000,                !- Specific Heat {J/kg-K}
+  0.9000,                  !- Thermal Absorptance
+  0.7000,                  !- Solar Absorptance
+  0.7000;                  !- Visible Absorptance
+ 
+Material,
+  Floor Insulation,        !- Name
+  MediumRough,             !- Roughness
+  0.0015,                  !- Thickness {m}
+  0.0450,                  !- Conductivity {W/m-K}
+  265.0000,                !- Density {kg/m3}
+  836.8000,                !- Specific Heat {J/kg-K}
+  0.9000,                  !- Thermal Absorptance
+  0.7000,                  !- Solar Absorptance
+  0.7000;                  !- Visible Absorptance
+ 
+Construction,
+  exposed-floor,           !- Name
+  Floor Insulation,        !- Outside Layer
+  MAT-CC05 8 HW CONCRETE,  !- Layer 2
+  CP02 CARPET PAD;         !- Layer 3
+ 
+##enddef

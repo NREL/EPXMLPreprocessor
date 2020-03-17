@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Written by HPBxmlManager procedure by NREL-->
+<HPBParametization xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\..\schema\HPBxml.xsd">
+  <HPBXmlSettings>
+    <HPBXmlVersion>0.1.2.4</HPBXmlVersion>
+  </HPBXmlSettings>
+  <OptEPlusMetadata>
+    <OptEPlusVersion>0.1.2.7</OptEPlusVersion>
+    <OptEPlusDatabase>C:\AEDG\med_retail\plug1.opt</OptEPlusDatabase>
+  </OptEPlusMetadata>
+  <SimSettings>
+    <TimeStepInHour>6</TimeStepInHour>
+    <UpdateShadowInterval>30</UpdateShadowInterval>
+    <BaseCase>true</BaseCase>
+    <RunWeatherFile>true</RunWeatherFile>
+    <MaxHVACIterations>20</MaxHVACIterations>
+    <MinSystemTimeStep>1</MinSystemTimeStep>
+    <EnergyPlusVersion>8.0</EnergyPlusVersion>
+  </SimSettings>
+  <SiteParams>
+    <WeatherFile filename="USA_FL_Miami_TMY2.epw"/>
+    <DesignDays instance="USA_FL_MIAMI"/>
+    <UtilityCosts instance="FloridPowLight_CommRates"/>
+    <PrimarySpaceType>Dining:Cafeteria</PrimarySpaceType>
+    <SecondarySpaceType>Whole Building</SecondarySpaceType>
+    <ClimateZones>
+      <ClimateZone>1A</ClimateZone>
+    </ClimateZones>
+    <SiteMetaData SiteStatsIndex="0" WeightFactor="0" BldgID="0" CensusDivision="3" CensusRegion="2" PrincipleBuildingActivity="15" MoreDetailedActivity="0" BuildingName="Benchmark Fastfood New"/>
+  </SiteParams>
+  <SpecificConstructs StaticObjectsFile="HPBStandardConstructions.imf">
+    <UseSimpleNamesForConstructions>true</UseSimpleNamesForConstructions>
+    <FenestrationSystem>
+      <south>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-1_0.2_0.3_fixed_south_window" CostPer="154.824" InstallCost="250" FixedOM="2" CostUnits="$/m^2" DataSource="Closest match from 90.1 database (1999)"/>
+        <Performance>
+          <UValue>6.921</UValue>
+          <SHGC>0.249</SHGC>
+          <VisibleTrans>0.25</VisibleTrans>
+        </Performance>
+        <WindowGlass MaterialName="Theoretical Glass [63]" Thickness="0.003" SolarTrans="0.236201" SolarReflectFront="0.713799" SolarReflectBack="0.713799" VisibleTrans="0.2514" VisibleReflectFront="0.6986" VisibleReflectBack="0.6986" IRTrans="0" IREmmFront="0.999" IREmmBack="0.999" Conductivity="100.282"/>
+      </south>
+      <east>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-1_0.1_0.2_fixed_east_window" CostPer="154.824" InstallCost="250" FixedOM="2" CostUnits="$/m^2" DataSource="Closest match from 90.1 database (1999)"/>
+        <Performance>
+          <UValue>6.921</UValue>
+          <SHGC>0.249</SHGC>
+          <VisibleTrans>0.25</VisibleTrans>
+        </Performance>
+        <WindowGlass MaterialName="Theoretical Glass [63]" Thickness="0.003" SolarTrans="0.236201" SolarReflectFront="0.713799" SolarReflectBack="0.713799" VisibleTrans="0.2514" VisibleReflectFront="0.6986" VisibleReflectBack="0.6986" IRTrans="0" IREmmFront="0.999" IREmmBack="0.999" Conductivity="100.282"/>
+      </east>
+      <north>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-1_0_0.1_fixed_north_window" CostPer="121.468" InstallCost="250" FixedOM="2" CostUnits="$/m^2" DataSource="Closest match from 90.1 database (1999)"/>
+        <Performance>
+          <UValue>6.921</UValue>
+          <SHGC>0.607</SHGC>
+          <VisibleTrans>0.608</VisibleTrans>
+        </Performance>
+        <WindowGlass MaterialName="Theoretical Glass [64]" Thickness="0.003" SolarTrans="0.592616" SolarReflectFront="0.357384" SolarReflectBack="0.357384" VisibleTrans="0.607844" VisibleReflectFront="0.342156" VisibleReflectBack="0.342156" IRTrans="0" IREmmFront="0.999" IREmmBack="0.999" Conductivity="100.376"/>
+      </north>
+      <west>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-1_0.1_0.2_fixed_west_window" CostPer="154.824" InstallCost="250" FixedOM="2" CostUnits="$/m^2" DataSource="Closest match from 90.1 database (1999)"/>
+        <Performance>
+          <UValue>6.921</UValue>
+          <SHGC>0.249</SHGC>
+          <VisibleTrans>0.25</VisibleTrans>
+        </Performance>
+        <WindowGlass MaterialName="Theoretical Glass [63]" Thickness="0.003" SolarTrans="0.236201" SolarReflectFront="0.713799" SolarReflectBack="0.713799" VisibleTrans="0.2514" VisibleReflectFront="0.6986" VisibleReflectBack="0.6986" IRTrans="0" IREmmFront="0.999" IREmmBack="0.999" Conductivity="100.282"/>
+      </west>
+      <SkylightConst>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-1_0_0.02_All Skylights without Curb_Skylight" CostPer="175.806" InstallCost="250" FixedOM="2" CostUnits="$/m^2" DataSource="Closest match from 90.1 database (1999)"/>
+        <Performance>
+          <UValue>6.852</UValue>
+          <SHGC>0.36</SHGC>
+          <VisibleTrans>0.457</VisibleTrans>
+        </Performance>
+        <WindowGlass MaterialName="Theoretical Glass [68]" Thickness="0.003" SolarTrans="0.34689" SolarReflectFront="0.60311" SolarReflectBack="0.60311" VisibleTrans="0.457336" VisibleReflectFront="0.492664" VisibleReflectBack="0.492664" IRTrans="0" IREmmFront="0.999" IREmmBack="0.999" Conductivity="2.13509"/>
+      </SkylightConst>
+    </FenestrationSystem>
+    <DaylightFenestrationSystem/>
+    <OpaqueConstructs>
+      <roofs>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-1_IEAD_Roof" description="R-15 ci" CostPer="34.3904" InstallCost="14.818" CostUnits="$/m^2" DataSource="Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)"/>
+        <Performance>
+          <Type>Insulation Entirely Above Deck</Type>
+          <UValue>0.3832</UValue>
+        </Performance>
+        <Material MaterialName="Roof Membrane" Roughness="VeryRough" Thickness="0.0095" Conductivity="0.16" Density="1121.29" SpecificHeat="1460" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="Roof Insulation" Roughness="MediumRough" Thickness="0.124958" Conductivity="0.049" Density="265" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="Metal Decking" Roughness="MediumSmooth" Thickness="0.001524" Conductivity="45.006" Density="7680" SpecificHeat="418.4" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.3"/>
+      </roofs>
+      <int-walls>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-1_Interior Wall_Int-Wall"/>
+        <Material MaterialName="GP01 1/2 GYPSUM" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="800" SpecificHeat="1090" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.5"/>
+        <Material MaterialName="GP01 1/2 GYPSUM" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="800" SpecificHeat="1090" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.5"/>
+      </int-walls>
+      <ext-walls>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-1_Wood-Framed and Other_Ext-wall" description="R-13" CostPer="27.0769" InstallCost="46.0308" CostUnits="$/m^2" DataSource="Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)"/>
+        <Performance>
+          <Type>Wood-Framed and Other</Type>
+          <UValue>0.543</UValue>
+        </Performance>
+        <Material MaterialName="Wood Siding" Roughness="MediumSmooth" Thickness="0.01" Conductivity="0.11" Density="544.62" SpecificHeat="1210" AbsorThermal="0.9" AbsorSolar="0.78" AbsorVis="0.78"/>
+        <Material MaterialName="Wall Insulation [3]" Roughness="MediumRough" Thickness="0.0752053" Conductivity="0.045" Density="265" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="1/2IN Gypsum" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="784.9" SpecificHeat="830" AbsorThermal="0.9" AbsorSolar="0.92" AbsorVis="0.92"/>
+      </ext-walls>
+      <ext-slab>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-1_Unheated_Ext-slab" CostPer="560.787" InstallCost="466.045" CostUnits="$/m^2" DataSource="Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)"/>
+        <Performance>
+          <UValue>2.692</UValue>
+        </Performance>
+        <Material MaterialName="MAT-CC05 8 HW CONCRETE" Roughness="Rough" Thickness="0.20321" Conductivity="1.311" Density="2240" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material-R MaterialName="CP02 CARPET PAD" Roughness="VeryRough" ThermalResistance="0.21648" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.8"/>
+      </ext-slab>
+      <exposed-floor>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-1_Mass_ExposedFloor" description="NR" CostPer="27.3818" InstallCost="11.7982" CostUnits="$/m^2" DataSource="Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)"/>
+        <Performance>
+          <UValue>2.668</UValue>
+        </Performance>
+        <Material MaterialName="Floor Insulation" Roughness="MediumRough" Thickness="0.000152069" Conductivity="0.045" Density="265" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="MAT-CC05 8 HW CONCRETE" Roughness="Rough" Thickness="0.20321" Conductivity="1.311" Density="2240" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material-R MaterialName="CP02 CARPET PAD" Roughness="VeryRough" ThermalResistance="0.21648" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.8"/>
+      </exposed-floor>
+      <attic-floor>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-1_Attic Floor_AtticFloor" description="R-30" CostPer="15.0182" InstallCost="18.5779" CostUnits="$/m^2" DataSource="Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)"/>
+        <Performance>
+          <UValue>0.1995</UValue>
+        </Performance>
+        <Material MaterialName="1/2IN Gypsum Top" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="784.9" SpecificHeat="830" AbsorThermal="0.9" AbsorSolar="0.92" AbsorVis="0.92"/>
+        <Material MaterialName="AtticFloor Insulation" Roughness="MediumRough" Thickness="0.237853" Conductivity="0.049" Density="265" SpecificHeat="836.8" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="1/2IN Gypsum Bottom" Roughness="Smooth" Thickness="0.01271" Conductivity="0.16" Density="784.9" SpecificHeat="830" AbsorThermal="0.9" AbsorSolar="0.92" AbsorVis="0.92"/>
+      </attic-floor>
+      <attic-roof>
+        <ConstructionName instance="ASHRAE 90.1-2004_Sec 5.5-5_IEAD_Roof" description="R-15 ci" CostPer="34.3904" InstallCost="14.818" CostUnits="$/m^2" DataSource="Linear interpolation on U-Value from 90.1 project committee data (2006-05-31)"/>
+        <Performance>
+          <Type>Insulation Entirely Above Deck</Type>
+          <UValue>0.3832</UValue>
+        </Performance>
+        <Material MaterialName="Roof Membrane" Roughness="VeryRough" Thickness="0.0095" Conductivity="0.16" Density="1121.29" SpecificHeat="1460" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.7"/>
+        <Material MaterialName="Metal Decking" Roughness="MediumSmooth" Thickness="0.001524" Conductivity="45.006" Density="7680" SpecificHeat="418.4" AbsorThermal="0.9" AbsorSolar="0.7" AbsorVis="0.3"/>
+      </attic-roof>
+    </OpaqueConstructs>
+  </SpecificConstructs>
+  <Building>
+    <Name>Benchmark Fastfood New</Name>
+    <HeaderInformation>! DOE Commercial Building Benchmark
+! Fast Food Restaurant, new construction
+! Benchmark V 2.0
+! EnergyPlus V 2.2
+!
+! Description:  Single story, Two zone building.
+! Form:         Area = 232 m2 (2,500 ft2); Number of Stories = 1; Shape = rectangle, Aspect ratio = 1.5
+! Envelope:     Envelope thermal properties vary with climate according to ASHRAE Standard 90.1-2004.
+!               Opaque constructions: wood frame walls; attic roof; slab-on-grade floor
+!               Windows: window-to-wall ratio = 14%
+!               Infiltration = 0.3 ACH (fans off), 0.15 ACH (fans on)
+! HVAC:         ASHRAE 90.1-2004 Appendix G Table G3.1.1B System Number 3 - PSZ-AC, gas furnace
+!               No economizer
+! Exhaust:      Kitchen exhaust 2360 L/s (5000 cfm)
+! Refrigeration: Walk-in cooler and walk-in freezer
+!
+! Int. gains:   W/m2 (W/ft2)   lights            elec plug          gas plug
+!               Kitchen         12.9 (1.2)         108 (10.0)      108 (10.0)
+!               Dining         22.6 (2.1)          0.0 (0.0)            0
+!
+! Detached Shading:               None
+! Daylight:                       None
+! Natural Ventilation:            None
+! Zonal Equipment:                None
+! Air Primary Loops:              Yes
+! Plant Loops:                    SHWSys1
+! System Equipment Autosize:      No
+! Purchased Cooling:              None
+! Purchased Heating:              None
+! Coils:                          COIL:DX:COOLINGBYPASSFACTOREMPIRICAL; COIL:GAS:HEATING
+! Pumps:                          None
+! Boilers:                        None
+! Chillers:                       None
+!</HeaderInformation>
+    <LegalNoticeType>Benchmarks</LegalNoticeType>
+    <Area>232.34</Area>
+    <NumFloors>1</NumFloors>
+    <PerimDepth>0</PerimDepth>
+    <FloortoFloorHeight>0</FloortoFloorHeight>
+    <Rotation>0</Rotation>
+    <Terrain>City</Terrain>
+    <Footprint>false</Footprint>
+    <Zone>
+      <Name>Dining</Name>
+      <ZoneType>Normal</ZoneType>
+      <PrimarySpaceType>Dining:Cafeteria</PrimarySpaceType>
+      <SecondarySpaceType>Whole Building</SecondarySpaceType>
+      <CustomXYZ>
+        <NorthAxis>0</NorthAxis>
+        <XOrigin>0</XOrigin>
+        <YOrigin>0</YOrigin>
+        <ZOrigin>0</ZOrigin>
+        <ZoneHeight>3.0488</ZoneHeight>
+        <ZoneVolume>354.18</ZoneVolume>
+        <CustomXYZSurfaces>
+          <SurfaceName>Dining_Wall_East</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName>Default</ConstructionName>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="15.2428" Y1="0" Z1="3.0488"/>
+          <Vertices X1="15.2428" Y1="0" Z1="0"/>
+          <Vertices X1="15.2428" Y1="7.6214" Z1="0"/>
+          <Vertices X1="15.2428" Y1="7.6214" Z1="3.0488"/>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Dining_Wall_East_Window</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Unknown</SubSurfaceSpecificType>
+            <ConstructionName>Default</ConstructionName>
+            <OutsideFaceEnvObject/>
+            <Multiplier>1</Multiplier>
+            <SubVertices X1="15.2428" Y1="0.254" Z1="1.9817"/>
+            <SubVertices X1="15.2428" Y1="0.254" Z1="1.0671"/>
+            <SubVertices X1="15.2428" Y1="7.3673" Z1="1.0671"/>
+            <SubVertices X1="15.2428" Y1="7.3673" Z1="1.9817"/>
+          </CustomXYZSubSurfaces>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Dining_Wall_South</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName>Default</ConstructionName>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="0" Y1="0" Z1="3.0488"/>
+          <Vertices X1="0" Y1="0" Z1="0"/>
+          <Vertices X1="15.2428" Y1="0" Z1="0"/>
+          <Vertices X1="15.2428" Y1="0" Z1="3.0488"/>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Dining_Wall_South_Window</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Unknown</SubSurfaceSpecificType>
+            <ConstructionName>Default</ConstructionName>
+            <OutsideFaceEnvObject/>
+            <Multiplier>1</Multiplier>
+            <SubVertices X1="0.508" Y1="0" Z1="1.9817"/>
+            <SubVertices X1="0.508" Y1="0" Z1="1.0671"/>
+            <SubVertices X1="14.735" Y1="0" Z1="1.0671"/>
+            <SubVertices X1="14.735" Y1="0" Z1="1.9817"/>
+          </CustomXYZSubSurfaces>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Dining_Wall_West</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName>Default</ConstructionName>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="0" Y1="7.6214" Z1="3.0488"/>
+          <Vertices X1="0" Y1="7.6214" Z1="0"/>
+          <Vertices X1="0" Y1="0" Z1="0"/>
+          <Vertices X1="0" Y1="0" Z1="3.0488"/>
+          <CustomXYZSubSurfaces>
+            <SubSurfaceName>Dining_Wall_West_Window</SubSurfaceName>
+            <SubSurfaceType>Window</SubSurfaceType>
+            <SubSurfaceSpecificType>Unknown</SubSurfaceSpecificType>
+            <ConstructionName>Default</ConstructionName>
+            <OutsideFaceEnvObject/>
+            <Multiplier>1</Multiplier>
+            <SubVertices X1="0" Y1="7.3673" Z1="1.9817"/>
+            <SubVertices X1="0" Y1="7.3673" Z1="1.0671"/>
+            <SubVertices X1="0" Y1="0.254" Z1="1.0671"/>
+            <SubVertices X1="0" Y1="0.254" Z1="1.9817"/>
+          </CustomXYZSubSurfaces>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Dining_Ceiling</SurfaceName>
+          <SurfaceType>Ceiling</SurfaceType>
+          <ConstructionName>Default</ConstructionName>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="0" Y1="7.6214" Z1="3.0488"/>
+          <Vertices X1="0" Y1="0" Z1="3.0488"/>
+          <Vertices X1="15.2428" Y1="0" Z1="3.0488"/>
+          <Vertices X1="15.2428" Y1="7.6214" Z1="3.0488"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Dining_Floor</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName>Default</ConstructionName>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="15.2428" Y1="7.6214" Z1="0"/>
+          <Vertices X1="15.2428" Y1="0" Z1="0"/>
+          <Vertices X1="0" Y1="0" Z1="0"/>
+          <Vertices X1="0" Y1="7.6214" Z1="0"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Dining_Wall_North</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName>Default</ConstructionName>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="15.2428" Y1="7.6214" Z1="3.0488"/>
+          <Vertices X1="15.2428" Y1="7.6214" Z1="0"/>
+          <Vertices X1="0" Y1="7.6214" Z1="0"/>
+          <Vertices X1="0" Y1="7.6214" Z1="3.0488"/>
+        </CustomXYZSurfaces>
+      </CustomXYZ>
+      <InternalGains>
+        <People>
+          <PeopleDensity>21.53</PeopleDensity>
+        </People>
+        <Lights>
+          <PowerDensity>22.6</PowerDensity>
+          <FractionRadiant>0.7</FractionRadiant>
+          <FractionReturn>0</FractionReturn>
+        </Lights>
+      </InternalGains>
+      <Infiltration>
+        <Rate>0.3</Rate>
+        <Schedule>INFIL_HALF_ON_SCH</Schedule>
+      </Infiltration>
+    </Zone>
+    <Zone>
+      <Name>Kitchen</Name>
+      <ZoneType>Normal</ZoneType>
+      <PrimarySpaceType>Dining:Cafeteria</PrimarySpaceType>
+      <SecondarySpaceType>Whole Building</SecondarySpaceType>
+      <CustomXYZ>
+        <NorthAxis>0</NorthAxis>
+        <XOrigin>0</XOrigin>
+        <YOrigin>0</YOrigin>
+        <ZOrigin>0</ZOrigin>
+        <ZoneHeight>3.0488</ZoneHeight>
+        <ZoneVolume>354.18</ZoneVolume>
+        <CustomXYZSurfaces>
+          <SurfaceName>Kitchen_Wall_North</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName>Default</ConstructionName>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="15.2428" Y1="15.2428" Z1="3.0488"/>
+          <Vertices X1="15.2428" Y1="15.2428" Z1="0"/>
+          <Vertices X1="0" Y1="15.2428" Z1="0"/>
+          <Vertices X1="0" Y1="15.2428" Z1="3.0488"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Kitchen_Wall_East</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName>Default</ConstructionName>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="15.2428" Y1="7.6214" Z1="3.0488"/>
+          <Vertices X1="15.2428" Y1="7.6214" Z1="0"/>
+          <Vertices X1="15.2428" Y1="15.2428" Z1="0"/>
+          <Vertices X1="15.2428" Y1="15.2428" Z1="3.0488"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Kitchen_Wall_West</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName>Default</ConstructionName>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="0" Y1="15.2428" Z1="3.0488"/>
+          <Vertices X1="0" Y1="15.2428" Z1="0"/>
+          <Vertices X1="0" Y1="7.6214" Z1="0"/>
+          <Vertices X1="0" Y1="7.6214" Z1="3.0488"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Kitchen_Ceiling</SurfaceName>
+          <SurfaceType>Ceiling</SurfaceType>
+          <ConstructionName>Default</ConstructionName>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="0" Y1="15.2428" Z1="3.0488"/>
+          <Vertices X1="0" Y1="7.6214" Z1="3.0488"/>
+          <Vertices X1="15.2428" Y1="7.6214" Z1="3.0488"/>
+          <Vertices X1="15.2428" Y1="15.2428" Z1="3.0488"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Kitchen_Floor</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName>Default</ConstructionName>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="15.2428" Y1="15.2428" Z1="0"/>
+          <Vertices X1="15.2428" Y1="7.6214" Z1="0"/>
+          <Vertices X1="0" Y1="7.6214" Z1="0"/>
+          <Vertices X1="0" Y1="15.2428" Z1="0"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>Dining_Wall_North-PPAutoCreateOther</SurfaceName>
+          <SurfaceType>Wall</SurfaceType>
+          <ConstructionName>Default</ConstructionName>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="0" Y1="7.6214" Z1="3.0488"/>
+          <Vertices X1="0" Y1="7.6214" Z1="0"/>
+          <Vertices X1="15.2428" Y1="7.6214" Z1="0"/>
+          <Vertices X1="15.2428" Y1="7.6214" Z1="3.0488"/>
+        </CustomXYZSurfaces>
+      </CustomXYZ>
+      <InternalGains>
+        <People>
+          <PeopleDensity>5.38</PeopleDensity>
+        </People>
+        <Lights>
+          <PowerDensity>12.91</PowerDensity>
+          <FractionRadiant>0.7</FractionRadiant>
+          <FractionReturn>0</FractionReturn>
+        </Lights>
+        <Equipment>
+          <EquipmentName>MiscElec</EquipmentName>
+          <EquipmentType>Electric</EquipmentType>
+          <PowerDensity>107.6</PowerDensity>
+          <RadiantFraction>0.5</RadiantFraction>
+          <EndUseCategory>MiscElec</EndUseCategory>
+        </Equipment>
+        <Equipment>
+          <EquipmentName>MiscGas</EquipmentName>
+          <EquipmentType>Gas</EquipmentType>
+          <PowerDensity>107.6</PowerDensity>
+          <RadiantFraction>0.5</RadiantFraction>
+          <EndUseCategory>MiscGas</EndUseCategory>
+        </Equipment>
+      </InternalGains>
+      <Infiltration>
+        <Rate>0.3</Rate>
+        <Schedule>INFIL_HALF_ON_SCH</Schedule>
+      </Infiltration>
+    </Zone>
+    <Zone>
+      <Name>attic</Name>
+      <ZoneType>Normal</ZoneType>
+      <ExcludeInArea>true</ExcludeInArea>
+      <CustomXYZ>
+        <NorthAxis>0</NorthAxis>
+        <XOrigin>0</XOrigin>
+        <YOrigin>0</YOrigin>
+        <ZOrigin>3.0488</ZOrigin>
+        <ZoneHeight>-9999</ZoneHeight>
+        <ZoneVolume>262.34</ZoneVolume>
+        <CustomXYZSurfaces>
+          <SurfaceName>attic-floor-dinning</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName>Default</ConstructionName>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="0" Y1="0" Z1="0"/>
+          <Vertices X1="0" Y1="7.6214" Z1="0"/>
+          <Vertices X1="15.2428" Y1="7.6214" Z1="0"/>
+          <Vertices X1="15.2428" Y1="0" Z1="0"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>attic-floor-kitchen</SurfaceName>
+          <SurfaceType>Floor</SurfaceType>
+          <ConstructionName>Default</ConstructionName>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="15.2428" Y1="15.2428" Z1="0"/>
+          <Vertices X1="15.2428" Y1="7.6214" Z1="0"/>
+          <Vertices X1="0" Y1="7.6214" Z1="0"/>
+          <Vertices X1="0" Y1="15.2428" Z1="0"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>west-roof</SurfaceName>
+          <SurfaceType>Roof</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="0" Y1="15.2428" Z1="0"/>
+          <Vertices X1="0" Y1="0" Z1="0"/>
+          <Vertices X1="2.5405" Y1="7.6214" Z1="2.5405"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>east-roof</SurfaceName>
+          <SurfaceType>Roof</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="15.2428" Y1="0" Z1="0"/>
+          <Vertices X1="15.2428" Y1="15.2428" Z1="0"/>
+          <Vertices X1="12.7023" Y1="7.6214" Z1="2.5405"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>north-roof</SurfaceName>
+          <SurfaceType>Roof</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="15.2428" Y1="15.2428" Z1="0"/>
+          <Vertices X1="0" Y1="15.2428" Z1="0"/>
+          <Vertices X1="2.5405" Y1="7.6214" Z1="2.5405"/>
+          <Vertices X1="12.7023" Y1="7.6214" Z1="2.5405"/>
+        </CustomXYZSurfaces>
+        <CustomXYZSurfaces>
+          <SurfaceName>south-roof</SurfaceName>
+          <SurfaceType>Roof</SurfaceType>
+          <ConstructionName/>
+          <OutsideFaceEnv>Unknown</OutsideFaceEnv>
+          <OutsideFaceEnvObject/>
+          <SolarExposure>Unknown</SolarExposure>
+          <WindExposure>Unknown</WindExposure>
+          <Vertices X1="0" Y1="0" Z1="0"/>
+          <Vertices X1="15.2428" Y1="0" Z1="0"/>
+          <Vertices X1="12.7023" Y1="7.6214" Z1="2.5405"/>
+          <Vertices X1="2.5405" Y1="7.6214" Z1="2.5405"/>
+        </CustomXYZSurfaces>
+      </CustomXYZ>
+      <Infiltration>
+        <Rate>1</Rate>
+        <Schedule>ALWAYS_ON</Schedule>
+      </Infiltration>
+    </Zone>
+  </Building>
+  <ScheduleSet instance="Schedule_Restaurant_ASHRAE_90.1-1989_TypTstat"/>
+  <HVACSystem>
+    <DetailedHVAC>
+      <ZoneScope>Each Zone Separate</ZoneScope>
+      <SystemScope>Building</SystemScope>
+      <Zone>
+        <ZoneName>Dining</ZoneName>
+        <SpaceConditioning>
+          <Sizing>
+            <OAPerArea>0.00172</OAPerArea>
+          </Sizing>
+          <Thermostat>
+            <HeatingSetpointSchedule>HTGSETP_SCH</HeatingSetpointSchedule>
+            <CoolingSetpointSchedule>CLGSETP_SCH</CoolingSetpointSchedule>
+          </Thermostat>
+          <Equipment>
+            <ExhaustFan>
+              <ExhaustFlowPerArea>0.00172</ExhaustFlowPerArea>
+              <ExhaustFanEfficiency>0.33</ExhaustFanEfficiency>
+              <ExhaustFanPressureDrop>400</ExhaustFanPressureDrop>
+            </ExhaustFan>
+            <DirectAir>
+              <AirSystemName>PSZ-AC_1</AirSystemName>
+            </DirectAir>
+          </Equipment>
+        </SpaceConditioning>
+      </Zone>
+      <Zone>
+        <ZoneName>Kitchen</ZoneName>
+        <SpaceConditioning>
+          <Sizing>
+            <OAPerArea>0.02266</OAPerArea>
+          </Sizing>
+          <Thermostat>
+            <HeatingSetpointSchedule>HTGSETP_KITCHEN_SCH</HeatingSetpointSchedule>
+            <CoolingSetpointSchedule>CLGSETP_KITCHEN_SCH</CoolingSetpointSchedule>
+          </Thermostat>
+          <DemandControlVentilation>true</DemandControlVentilation>
+          <Equipment>
+            <ExhaustFan>
+              <ExhaustFlowPerArea>0.02031</ExhaustFlowPerArea>
+              <ExhaustFanEfficiency>0.33</ExhaustFanEfficiency>
+              <ExhaustFanPressureDrop>400</ExhaustFanPressureDrop>
+              <MakeupTransferAir>
+                <ZoneFrom>DINING</ZoneFrom>
+                <FlowFraction>0.0847</FlowFraction>
+              </MakeupTransferAir>
+            </ExhaustFan>
+            <DirectAir>
+              <AirSystemName>PSZ-AC_2</AirSystemName>
+            </DirectAir>
+          </Equipment>
+        </SpaceConditioning>
+        <ProcessLoads>
+          <WaterSystems>
+            <Uses>
+              <PerType>EachPerHour</PerType>
+              <UseRatePer>0.0379</UseRatePer>
+              <TemperatureTarget>43.3</TemperatureTarget>
+              <ScheduleName>BLDG_SWH_SCH</ScheduleName>
+            </Uses>
+          </WaterSystems>
+          <RefrigeratedCases>
+            <CaseType>Walkin</CaseType>
+            <DataSetKey>WalkInFreezer</DataSetKey>
+            <NameOfCompressorRack>RACK1</NameOfCompressorRack>
+            <CoolingCapacityPerLength>688</CoolingCapacityPerLength>
+            <Length>2.44</Length>
+            <OperatingTemperature>-23</OperatingTemperature>
+            <FanPowerPerLength>74</FanPowerPerLength>
+            <LightingPowerPerLength>33</LightingPowerPerLength>
+            <FractionLightsToCase>1</FractionLightsToCase>
+          </RefrigeratedCases>
+          <RefrigeratedCases>
+            <CaseType>SingleDeckIceCream</CaseType>
+            <DataSetKey>SelfContainedDisplayCase</DataSetKey>
+            <NameOfCompressorRack>RACK2</NameOfCompressorRack>
+            <CoolingCapacityPerLength>734</CoolingCapacityPerLength>
+            <Length>3.05</Length>
+            <OperatingTemperature>2</OperatingTemperature>
+            <FanPowerPerLength>66</FanPowerPerLength>
+            <LightingPowerPerLength>33</LightingPowerPerLength>
+            <FractionLightsToCase>1</FractionLightsToCase>
+          </RefrigeratedCases>
+        </ProcessLoads>
+      </Zone>
+      <Systems>
+        <HVACSystems>
+          <AirSystem>
+            <DistributionType>SingleZone</DistributionType>
+            <Name>PSZ-AC_1</Name>
+            <StdCoolingTable>Unitary Air Conditioners</StdCoolingTable>
+            <StdCoolingEquipType>Air Conditioners</StdCoolingEquipType>
+            <StdCoolingCondenserType>Air Cooled</StdCoolingCondenserType>
+            <UseNightCycle>true</UseNightCycle>
+            <SATManagerType>Scheduled</SATManagerType>
+            <Equipment>
+              <OutsideAirSystem>
+                <UseEconomizer>false</UseEconomizer>
+                <MotorizedDamper>false</MotorizedDamper>
+                <Equipment>
+                  <EvaporativeCooler>
+                    <Type>Indirect:RDDSpecial</Type>
+                    <PressureDrop>250</PressureDrop>
+                  </EvaporativeCooler>
+                </Equipment>
+              </OutsideAirSystem>
+              <Coil>
+                <Type>Cooling</Type>
+                <Fuel>Electricity</Fuel>
+                <COP>4.14679</COP>
+              </Coil>
+              <Coil>
+                <Type>Heating</Type>
+                <Fuel>Gas</Fuel>
+                <Efficiency>0.8</Efficiency>
+                <COP>-9999</COP>
+              </Coil>
+              <Fan>
+                <Type>Constant</Type>
+                <Efficiency>0.263678</Efficiency>
+                <MotorEfficiency>0.84</MotorEfficiency>
+                <PressureDrop>500</PressureDrop>
+              </Fan>
+            </Equipment>
+          </AirSystem>
+          <AirSystem>
+            <DistributionType>SingleZone</DistributionType>
+            <Name>PSZ-AC_2</Name>
+            <StdCoolingTable>Unitary Air Conditioners</StdCoolingTable>
+            <StdCoolingEquipType>Air Conditioners</StdCoolingEquipType>
+            <StdCoolingCondenserType>Air Cooled</StdCoolingCondenserType>
+            <UseNightCycle>true</UseNightCycle>
+            <SATManagerType>Scheduled</SATManagerType>
+            <Equipment>
+              <OutsideAirSystem>
+                <UseEconomizer>false</UseEconomizer>
+                <MotorizedDamper>false</MotorizedDamper>
+              </OutsideAirSystem>
+              <Coil>
+                <Type>Cooling</Type>
+                <Fuel>Electricity</Fuel>
+                <COP>3.53608</COP>
+              </Coil>
+              <Coil>
+                <Type>Heating</Type>
+                <Fuel>Gas</Fuel>
+                <Efficiency>0.8</Efficiency>
+                <COP>-9999</COP>
+              </Coil>
+              <Fan>
+                <Type>Constant</Type>
+                <Efficiency>0.263678</Efficiency>
+                <MotorEfficiency>0.885</MotorEfficiency>
+                <PressureDrop>500</PressureDrop>
+              </Fan>
+            </Equipment>
+          </AirSystem>
+          <LiquidSystemHotWater>
+            <SWHTargetTemp>60</SWHTargetTemp>
+            <Equipment>
+              <Pump>
+                <Type>Variable</Type>
+                <Efficiency>1</Efficiency>
+                <Head>0.1</Head>
+              </Pump>
+              <WaterHeater>
+                <Type>Storage Tank</Type>
+                <Fuel>NaturalGas</Fuel>
+                <Efficiency>0.8</Efficiency>
+                <Volume>0.2</Volume>
+                <Capacity>845000</Capacity>
+                <EffectiveUValue>0</EffectiveUValue>
+                <HeightAspectRatio>0</HeightAspectRatio>
+                <NumberNodes>0</NumberNodes>
+              </WaterHeater>
+            </Equipment>
+          </LiquidSystemHotWater>
+        </HVACSystems>
+        <RefrigerationCompressorRack>
+          <Name>RACK1</Name>
+          <DataSetKey>LowTempRack</DataSetKey>
+          <COP>1.5</COP>
+          <CondenserType>AirCooled</CondenserType>
+          <FanPower>330</FanPower>
+          <HeatRejectionLocation>Outdoors</HeatRejectionLocation>
+        </RefrigerationCompressorRack>
+        <RefrigerationCompressorRack>
+          <Name>RACK2</Name>
+          <DataSetKey>SelfContainedMediumTempRack</DataSetKey>
+          <COP>3</COP>
+          <CondenserType>AirCooled</CondenserType>
+          <FanPower>330</FanPower>
+          <HeatRejectionLocation>Outdoors</HeatRejectionLocation>
+        </RefrigerationCompressorRack>
+      </Systems>
+    </DetailedHVAC>
+  </HVACSystem>
+  <MacroControl path="./include" ReportVarSetKey="BasicReportsAndABUPS_Benchmark"/>
+  <TextInput>
+    <DirectSubstitution>
+      <SubCategory instance="ScheduleEquipment"/>
+      <SubText>SCHEDULE:COMPACT,
+ Custom_equip,
+  Fraction,  ! ScheduleType
+  Through: 12/31,
+    For: AllDays,
+     Until:  6:00, 0.,
+     Until:  8:00, 0.1,
+     Until:  9:00, 0.15,
+     Until: 10:00, 0.2,
+     Until: 11:00, 0.6,
+     Until: 12:00, 0.7,
+     Until: 13:00, 0.5,
+     Until: 14:00, 0.4,
+     Until: 16:00, 0.1,
+     Until: 17:00, 0.4,
+     Until: 18:00, 0.7,
+     Until: 19:00, 0.8,
+     Until: 20:00, 0.55,
+     Until: 21:00, 0.4,
+     Until: 22:00, 0.35,
+     Until: 23:00, 0.1,
+     Until: 24:00, 0.;</SubText>
+    </DirectSubstitution>
+  </TextInput>
+  <CodeStandardSettings>
+    <RoofConstruction>Insulation Entirely Above Deck</RoofConstruction>
+    <ExtWallConstruction>Steel-Framed</ExtWallConstruction>
+    <ExtSlabConstruction>Unheated - 8in Slab with Carpet</ExtSlabConstruction>
+    <WholeBuildingMethod>false</WholeBuildingMethod>
+  </CodeStandardSettings>
+</HPBParametization>

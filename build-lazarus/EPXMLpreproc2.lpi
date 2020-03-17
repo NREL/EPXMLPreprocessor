@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasUsesSectionForAllUnits Value="False"/>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <LRSInOutputDirectory Value="False"/>
+      </Flags>
+      <MainUnit Value="0"/>
+    </General>
+    <VersionInfo>
+      <Language Value=""/>
+      <CharSet Value=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default">
+          <local>
+            <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+            <WorkingDirectory Value="C:\kbenne\WorkingCopies\Migrated_Benchmarks\FFRest\nrel\new\1A_USA_FL_MIAMI"/>
+          </local>
+        </Mode0>
+      </Modes>
+    </RunParams>
+    <Units Count="40">
+      <Unit0>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="48"/>
+        <CursorPos X="26" Y="54"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="..\source\XMLproc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="3" Y="16"/>
+        <UsageCount Value="22"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\source\EnergyPlusBuilding.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <UsageCount Value="22"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\source\EnergyPlusConstructions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\source\EnergyPlusCore.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\source\EnergyPlusDaylighting.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\source\EnergyPlusEconomics.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\source\EnergyPlusElectricLoadCenter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\source\EnergyPlusEndUseComponents.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\source\EnergyPlusExteriorLoads.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\source\EnergyPlusGeometry.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\source\EnergyPlusInternalGains.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\source\EnergyPlusLibGrab.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\source\EnergyPlusPerformanceCurves.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\source\EnergyPlusPPErrorMessages.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\source\EnergyPlusReportVariables.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\source\EnergyPlusSchedules.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\source\EnergyPlusSettings.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="40"/>
+        <CursorPos X="19" Y="57"/>
+        <UsageCount Value="22"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\source\EnergyPlusSizing.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\source\EnergyPlusSurfaces.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="..\source\EnergyPlusSystemComponents.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\source\EnergyPlusSystems.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\source\EnergyPlusZoneEquipmentList.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\source\EnergyPlusZones.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\source\GlobalFuncs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="27" Y="14"/>
+        <UsageCount Value="22"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="..\source\Globals.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="22"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="..\source\PlatformDepFunctions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="..\source\PreprocSettings.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="..\source\VectorMath.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="..\source\shared\xmlProcessing.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="40"/>
+        <CursorPos X="34" Y="57"/>
+        <UsageCount Value="22"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="..\source\shared\NativeXml.pas"/>
+        <UsageCount Value="22"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="..\source\shared\xmlCostStructures.pas"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="Text"/>
+        <UsageCount Value="22"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="Z:\lazarus\fpc\2.2.0\source\rtl\win32\system.pp"/>
+        <UnitName Value="System"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="268"/>
+        <CursorPos Y="289"/>
+        <UsageCount Value="10"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="..\source\string\stringfileutilities\StringFileUtilities.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="16"/>
+        <CursorPos X="54" Y="44"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="..\source\EnergyPlusObject.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="26" Y="9"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="..\source\string\StringFileUtilities.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="..\source\string\regexpr\RegExpr.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="..\source\3rdparty\nativexml\NativeXml.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2646"/>
+        <CursorPos X="26" Y="2655"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="..\source\3rdparty\regexpr\RegExpr.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="..\source\shared\StringFileUtilities.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit39>
+    </Units>
+    <JumpHistory Count="18" HistoryIndex="17">
+      <Position1>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="241" TopLine="220"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="242" TopLine="221"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="243" TopLine="222"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="245" TopLine="224"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="248" TopLine="227"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="251" TopLine="230"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="150" Column="82"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="24" Column="15" TopLine="19"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="29" Column="15" TopLine="13"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="21" Column="22" TopLine="4"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="24" Column="22"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="27" Column="31" TopLine="4"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="24" Column="34" TopLine="24"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="142" Column="73" TopLine="124"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="139" Column="73" TopLine="121"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="66" Column="11" TopLine="49"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="24" Column="51" TopLine="22"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\source\EPXMLPreproc2.dpr"/>
+        <Caret Line="54" Column="26" TopLine="48"/>
+      </Position18>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <OtherUnitFiles Value="..\source\shared;..\source;..\source\3rdparty\nativexml;..\source\3rdparty\regexpr"/>
+      <UnitOutputDirectory Value="bin"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="2">
+      <Item1>
+        <Name Value="ECodetoolError"/>
+      </Item1>
+      <Item2>
+        <Name Value="EFOpenError"/>
+      </Item2>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

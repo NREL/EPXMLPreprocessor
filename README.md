@@ -4,6 +4,9 @@ The EPXMLPreprocessor is a computer program that reads an abstract description o
 
 This software is no longer supported and users may use at their own risk
 
+## License
+
+See the [LICENCE.txt](./LICENSE.txt) for the current license. Note that this project contains 3rd party open source code including NativeXml and RegExpr. Those licences are found in the source/3rdparty directory.
 
 ## Building on Windows
 

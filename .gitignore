@@ -1,0 +1,18 @@
+.idea
+.DS_STORE
+~$*
+*.ppu
+
+# Skip output of test files
+tests/*/*.idf
+
+# do not commit the build products
+build-make/bin
+build-lazarus/bin
+build-lazarus/backup
+source/backup
+source/shared/backup
+source/3rdparty/backup
+bin/EPXMLPreproc2*
+
+

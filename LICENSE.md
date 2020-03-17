@@ -1,4 +1,6 @@
-Copyright (c) 2008-2020, Alliance for Sustainable Energy, LLC
+BSD 3-Clause License
+
+Copyright (c) 2008-2020,  Alliance for Sustainable Energy, LLC.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
